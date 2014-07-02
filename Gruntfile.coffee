@@ -1,5 +1,6 @@
 module.exports = (grunt) ->
 
+  # load Grunt plugins
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks)
 
   grunt.initConfig
@@ -7,88 +8,59 @@ module.exports = (grunt) ->
     # load content from the package.json
     pkg: grunt.file.readJSON('package.json')
 
-
-    # Set up some vars
-    paths:
-      assets: 'assets'
-      coffee: '<%= paths.assets %>/coffee'
-      js: '<%= paths.assets %>/js'
-      sass: '<%= paths.assets %>/sass'
-      sassfilename: 'styles'
-      css: '<%= paths.assets %>/styles'
-    banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */'
-
-
-    # process coffee-files
-    coffee:
-      all:
-        options:
-          join: false
-          bare: true
-        files: [
-          expand: true
-          cwd: '<%= paths.coffee %>'
-          src: ['*.coffee']
-          dest: '<%= paths.coffee %>/pre_js'
-          ext: '.js'
-        ]
-
-    # minify js-files
-    uglify:
-      options:
-        banner: '<%= banner %>'
-      js:
-        files:
-          '<%= paths.js %>/script.min.js': [
-            '<%= paths.coffee %>/pre_js/jquery*.js'
-            '<%= paths.coffee %>/pre_js/*.js'
-          ]
-        options:
-          mangle: false
-
-
     # process sass-files
     sass:
       all:
         options:
           compass: true
           style: 'compressed'
-        files: '<%= paths.sass %>/temp_<%= paths.sassfilename %>.css': '<%= paths.sass %>/<%= paths.sassfilename %>.sass'
+        files: 'assets/css/style.css': 'assets/scss/style.scss'
 
     # minify css-files
     cssmin:
       options:
-        banner: '<%= banner %>'
+        banner: 'By @nathanbirrell for Memla, 2014.'
       all:
         files:
-          '<%= paths.css %>/<%= paths.sassfilename %>.css': [
-            '<%= paths.sass %>/*.css'
+          'assets/css/*.min.css': [
+            'assets/css/*.css'
           ]
 
+    # minify js-files
+    uglify:
+      options:
+        banner: 'By @nathanbirrell for Memla, 2014.'
+      js:
+        files:
+          'assets/js/*.min.js': [
+            'assets/js/*.js',
+            'assets/js/**/*.js'
+          ]
+        options:
+          mangle: false
 
+    # watch the following files, and perform above actions accordingly
     watch:
       options:
         livereload: true
 
       livereload:
         files: [
-          '<%= paths.css %>/**/*'
-          '<%= paths.js %>/**/*'
+          'assets/css/**/*'
+          'assets/js/**/*'
         ]
         tasks: ['reload']
 
       sass:
-        files: ['<%= paths.sass %>/*.sass']
+        files: ['assets/scss/*.sass']
         tasks: ['sass']
       css:
-        files: ['<%= paths.sass %>/*.css']
+        files: ['assets/css/*.css']
         tasks: ['cssmin']
-      coffee:
-        files: ['<%= paths.coffee %>/*.coffee']
-        tasks: ['coffee']
       js:
         files: [
-          '<%= paths.coffee %>/pre_js/*.js'
+          'assets/js/*.js',
+          'assets/js/**/*.js'
         ]
         tasks: ['uglify']
 
@@ -121,6 +93,6 @@ module.exports = (grunt) ->
         "-e 'reload' " +
         "-e 'end tell'")
 
-
+  # Register defaults
   grunt.registerTask('server', ['open','php'])
   grunt.registerTask('default', ['reload','watch'])
