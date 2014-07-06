@@ -6,51 +6,49 @@ module.exports = function(grunt){
         pkg: grunt.file.readJSON('package.json'),
 
         watch: {
-            options: {
-              reload: true
+            livereload: {
+              files: ['assets/css/**/*','assets/js/**/*'],
+              tasks: ['reload']
             },
-            js: {
-                files: ['assets/js/*.js'],
-                tasks: ['uglify']
-            },
+            // js: {
+            //     files: ['assets/js/*.js'],
+            //     tasks: ['uglify']
+            // },
             css: {
-                files: ['assets/css/*.scss'],
-                tasks: ['sass']
+                files: ['assets/css/app.scss'],
+                tasks: ['sass','cssmin']
+            },
+            tmpl: {
+              files: ['site/templates/*','site/snippets/*','site/plugins/*'],
+              tasks: ['reload']
             }
         },
 
         cssmin: {
             build: {
-                src: 'assets/css/style.css',
-                dest: 'assets/css/style.min.css'
+                src: 'assets/css/app.css',
+                dest: 'assets/css/app.min.css'
             }
         },
 
         sass: {
             build: {
                 files: {
-                    'assets/css/*.css': 'assets/css/*.scss'
+                    'assets/css/app.css': 'assets/css/app.scss'
                 }
             }
         },
 
-        concat: {
-          dev: {
-            src: 'assets/js/root/**/*.js',
-            dest: 'assets/js/main.js'
-          }
-        },
-
-        uglify: {
-            options: {
-              mangle: false //To prevent changes to your variable and function names
-            },
-            build: {
-                files: {
-                    'assets/js/main.min.js': ['assets/js/main.js']
-                }
-            }
-        },
+        // uglify: {
+        //     options: {
+        //       mangle: false //To prevent changes to your variable and function names
+        //     },
+        //     build: {
+        //         files: {
+        //             'assets/js/vendor/*.min.js': ['assets/js/vendor/*.js']
+        //         }
+        //     }
+        // },
 
         imagemin: {
           png: {
@@ -96,6 +94,15 @@ module.exports = function(grunt){
             app: 'Google Chrome'
           }
         }
+    });
+
+    grunt.registerTask("reload", "reload Chrome on OS X",
+      function() {
+        require("child_process").exec("osascript " +
+            "-e 'tell application \"Google Chrome\" " +
+              "to tell the active tab of its first window' " +
+            "-e 'reload' " +
+            "-e 'end tell'");
     });
 
     grunt.registerTask('default', ['watch']);
