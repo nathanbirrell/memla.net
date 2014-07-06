@@ -17,19 +17,23 @@
     <!-- If you are using the gem version, you need this only -->
     <link rel="stylesheet" href="assets/css/app.css">
 
-    <script src="js/vendor/modernizr.js"></script>
+    <script src="assets/js/vendor/modernizr.js"></script>
 
   </head>
 
 <body>
 
   <!-- body content here -->
-  
-<div class="row">
+
+  <div class="row">
     <div class="large-12 columns">
-      <h1>Welcome to Foundation</h1>
+      <h1>Memla: Landscape Architects Melbourne </h1>
     </div>
   </div>
+
+
+
+  <!-- Just testing below -->
 
   <div class="row">
     <div class="large-12 columns">

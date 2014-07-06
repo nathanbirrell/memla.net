@@ -7,7 +7,12 @@ module.exports = function(grunt){
 
         watch: {
             livereload: {
-              files: ['assets/css/**/*','assets/js/**/*'],
+              files: [
+                      'assets/css/**/*',
+                      'assets/js/**/*',
+                      'content/**/*',
+                      'site/**/*'
+                      ],
               tasks: ['reload']
             },
             // js: {
