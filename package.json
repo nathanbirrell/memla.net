@@ -1,0 +1,19 @@
+{
+    "name" : "Memla.net",
+    "version" : "0.1.0",
+    "author" : "@nathanbirrell",
+    "private" : true,
+
+    "devDependencies" : {
+        "grunt" :                       "~0.4.1",
+        "matchdep":                     "*",
+        "grunt-contrib-cssmin":         "*",
+        "grunt-contrib-sass":           "*",
+        "grunt-contrib-uglify":         "*",
+        "grunt-contrib-watch":          "*",
+        "grunt-contrib-livereload":     "*",
+        "grunt-cssc":                   "*",
+        "grunt-php":                    "~0.2.0",
+        "grunt-open":                   "~0.2.2"
+    }
+}
