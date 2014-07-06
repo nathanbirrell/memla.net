@@ -1,5 +1,7 @@
-  <footer>
-    <?php echo kirbytext($site->copyright()) ?>
+  <footer class="row">
+    <div class="small-5 small-centered columns  text-center">
+      <?php echo kirbytext($site->copyright()) ?>
+    </div>
   </footer>
 
   <script src="assets/js/vendor/jquery.js"></script>
