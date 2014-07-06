@@ -12,8 +12,10 @@
         "grunt-contrib-uglify":         "*",
         "grunt-contrib-watch":          "*",
         "grunt-contrib-livereload":     "*",
-        "grunt-cssc":                   "*",
-        "grunt-php":                    "~0.2.0",
-        "grunt-open":                   "~0.2.2"
+        "grunt-php":                    "*",
+        "grunt-open":                   "*",
+        "grunt-contrib-concat":         "*",
+        "grunt-autoprefixer":           "*",
+        "grunt-contrib-imagemin":       "*"
     }
 }

@@ -5,23 +5,24 @@ module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        cssc: {
-            build: {
-                options: {
-                    consolidateViaDeclarations: true,
-                    consolidateViaSelectors:    true,
-                    consolidateMediaQueries:    true
-                },
-                files: {
-                    'assets/css/*.css': 'assets/css/*.css'
-                }
+        watch: {
+            options: {
+              reload: true
+            },
+            js: {
+                files: ['assets/js/*.js'],
+                tasks: ['uglify']
+            },
+            css: {
+                files: ['assets/css/*.scss'],
+                tasks: ['sass']
             }
         },
 
         cssmin: {
             build: {
-                src: 'assets/css/*.css',
-                dest: 'assets/css/*.min.css'
+                src: 'assets/css/style.css',
+                dest: 'assets/css/style.min.css'
             }
         },
 
@@ -33,30 +34,49 @@ module.exports = function(grunt){
             }
         },
 
+        concat: {
+          dev: {
+            src: 'assets/js/root/**/*.js',
+            dest: 'assets/js/main.js'
+          }
+        },
+
         uglify: {
+            options: {
+              mangle: false //To prevent changes to your variable and function names
+            },
             build: {
                 files: {
-                    'assets/js/*.min.js': ['assets/js/*.js']
+                    'assets/js/main.min.js': ['assets/js/main.js']
                 }
             }
         },
 
-        watch: {
+        imagemin: {
+          png: {
             options: {
-              reload: true
+              optimizationLevel: 7 //Compression level
             },
-            html: {
-                files: ['*.html','*.php','content/*','site/templates/*'],
-                tasks: []
+            files: [{
+              expand: true, //Dynamic expansion
+              cwd: 'assets/img/uncompressed',
+              src: ['assets/img/uncompressed/*.png'],
+              dest: 'assets/img',
+              ext: '.png'
+            }]
+          },
+          jpg: {
+            options: {
+            progressive: true //Lossless or progressive conversion
             },
-            js: {
-                files: ['assets/js/*.js'],
-                tasks: ['uglify']
-            },
-            css: {
-                files: ['assets/sass/**/*.scss'],
-                tasks: ['buildcss']
-            }
+            files: [{
+              expand: true,
+              cwd: 'assets/img/uncompressed',
+              src: ['assets/img/uncompressed/*.jpg'],
+              dest: 'assets/img/folder',
+              ext: '.jpg'
+            }]
+          }
         },
 
         php: {
@@ -78,6 +98,8 @@ module.exports = function(grunt){
         }
     });
 
-    grunt.registerTask('default', ['open','php']);
+    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('server', ['open','php']);
+    // grunt.registerTask('build',  ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 
 };
