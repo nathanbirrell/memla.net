@@ -21,7 +21,7 @@ module.exports = function(grunt){
             // },
             css: {
                 files: ['assets/css/app.scss'],
-                tasks: ['sass','cssmin']
+                tasks: ['sass','cssmin','reload']
             },
             tmpl: {
               files: ['site/templates/*','site/snippets/*','site/plugins/*'],
