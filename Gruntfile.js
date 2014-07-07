@@ -8,7 +8,7 @@ module.exports = function(grunt){
         watch: {
             livereload: {
               files: [
-                      'assets/css/**/*',
+                      'assets/css/app.min.css',
                       'assets/js/**/*',
                       'content/**/*',
                       'site/**/*'
@@ -20,8 +20,8 @@ module.exports = function(grunt){
             //     tasks: ['uglify']
             // },
             css: {
-                files: ['assets/css/app.scss'],
-                tasks: ['sass','cssmin','reload']
+                files: ['assets/css/**/**/*'],
+                tasks: ['sass','cssmin']
             },
             tmpl: {
               files: ['site/templates/*','site/snippets/*','site/plugins/*'],
