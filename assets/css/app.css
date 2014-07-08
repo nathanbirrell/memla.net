@@ -5411,3 +5411,16 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+.top-bar-section .centered-nav {
+  max-width: 600px;
+  margin: 0 auto; }
+  .top-bar-section .centered-nav ul {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block; }
+    .top-bar-section .centered-nav ul li {
+      float: left; }
+      .top-bar-section .centered-nav ul li:last-child a {
+        margin-right: 0; }

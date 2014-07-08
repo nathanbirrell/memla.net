@@ -1,1 +1,26 @@
 // Author: Nathan Birrell
+
+.top-bar-section {
+.centered-nav {
+  max-width: 600px;
+  margin: 0 auto;
+
+  ul {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+
+    li {
+      float: left;
+
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+}

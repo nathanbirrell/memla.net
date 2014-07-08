@@ -110,7 +110,7 @@ module.exports = function(grunt){
             "-e 'end tell'");
     });
 
-    grunt.registerTask('default', ['open','php','watch']);
+    grunt.registerTask('default', ['watch']);
     grunt.registerTask('server', ['open','php']);
     // grunt.registerTask('build',  ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 
