@@ -8,7 +8,7 @@ module.exports = function(grunt){
         watch: {
             livereload: {
               files: [
-                      'assets/css/app.min.css',
+                      'assets/css/app.css',
                       'assets/js/**/*',
                       'content/**/*',
                       'site/**/*'
@@ -21,7 +21,7 @@ module.exports = function(grunt){
             // },
             css: {
                 files: ['assets/css/**/**/*'],
-                tasks: ['sass','cssmin']
+                tasks: ['sass'/*,'cssmin'*/]
             },
             tmpl: {
               files: ['site/templates/*','site/snippets/*','site/plugins/*'],
@@ -110,7 +110,7 @@ module.exports = function(grunt){
             "-e 'end tell'");
     });
 
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['open','php','watch']);
     grunt.registerTask('server', ['open','php']);
     // grunt.registerTask('build',  ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 

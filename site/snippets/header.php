@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/normalize.min.css">
 
     <!-- If you are using the gem version, you need this only -->
-    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 
     <script src="assets/js/vendor/modernizr.js"></script>
 
