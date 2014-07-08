@@ -15,11 +15,9 @@
     li {
       float: left;
 
-      &:last-child {
-        a {
-          margin-right: 0;
-        }
-      }
+      a {display: initial;}
+
+      &:last-child {a {margin-right: 0;}}
     }
   }
 }

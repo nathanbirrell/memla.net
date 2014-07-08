@@ -39,12 +39,14 @@ $include-html-global-classes: $include-html-classes;
 // Global
 
 // We use these to define default font weights
+$font-weight-light: 300;
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
 // We use these to control various global styles
 $body-bg: #ebecec;
 $body-font-color: #222;
+$body-font-color-hover: red;
 $body-font-family: 'Source Sans Pro', sans-serif;
 
 $font-weight-normal:normal;
@@ -1215,11 +1217,11 @@ $topbar-dropdown-bg: $body-bg;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $body-font-color;
-$topbar-link-color-hover: +20%;
-$topbar-link-color-active: +20%;
-$topbar-link-color-active-hover: #fff;
-$topbar-link-weight: $font-weight-normal;
-$topbar-link-font-size: rem-calc(13);
+$topbar-link-color-hover: $body-font-color-hover;
+$topbar-link-color-active: none;
+$topbar-link-color-active-hover: $body-font-color-hover;
+$topbar-link-weight: $font-weight-light;
+$topbar-link-font-size: rem-calc(18);
 $topbar-link-hover-lightness: none;
 $topbar-link-bg: $body-bg;
 $topbar-link-bg-color-hover: $body-bg;

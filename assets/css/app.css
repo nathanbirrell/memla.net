@@ -4518,11 +4518,11 @@ meta.foundation-mq-topbar {
       padding: 12px 0 12px 0;
       padding-left: 48.33333px;
       font-family: "Source Sans Pro", sans-serif;
-      font-size: 0.8125rem;
-      font-weight: normal;
+      font-size: 1.125rem;
+      font-weight: 300;
       text-transform: uppercase; }
       .top-bar-section ul li > a.button {
-        font-size: 0.8125rem;
+        font-size: 1.125rem;
         padding-right: 48.33333px;
         padding-left: 48.33333px;
         background-color: #008cba;
@@ -4557,7 +4557,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
           color: white; }
     .top-bar-section ul li > button {
-      font-size: 0.8125rem;
+      font-size: 1.125rem;
       padding-right: 48.33333px;
       padding-left: 48.33333px;
       background-color: #008cba;
@@ -4594,13 +4594,13 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #ebecec;
       background: #ebecec;
-      color: 20%; }
+      color: red; }
     .top-bar-section ul li.active > a {
       background: #ebecec;
-      color: 20%; }
+      color: none; }
       .top-bar-section ul li.active > a:hover {
         background: #ebecec;
-        color: white; }
+        color: red; }
   .top-bar-section .has-form {
     padding: 48.33333px; }
   .top-bar-section .has-dropdown {
@@ -4650,7 +4650,7 @@ meta.foundation-mq-topbar {
         font-weight: normal;
         padding: 8px 48.33333px; }
         .top-bar-section .dropdown li a.parent-link {
-          font-weight: normal; }
+          font-weight: 300; }
       .top-bar-section .dropdown li.title h5 {
         margin-bottom: 0;
         margin-top: 0; }
@@ -4716,7 +4716,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li.hover > a:not(.button) {
       background-color: #ebecec;
       background: #ebecec;
-      color: 20%; }
+      color: red; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 48.33333px;
       line-height: 145px;
@@ -4727,7 +4727,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 48.33333px;
       line-height: 145px;
-      color: 20%;
+      color: none;
       background: #ebecec; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #ebecec; }
@@ -4782,7 +4782,7 @@ meta.foundation-mq-topbar {
         color: white;
         background: #333333; }
       .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
-        color: 20%;
+        color: red;
         background-color: #ebecec;
         background: #ebecec; }
       .top-bar-section .dropdown li label {
@@ -4816,10 +4816,10 @@ meta.foundation-mq-topbar {
   .no-js .top-bar-section ul li:hover > a {
     background-color: #ebecec;
     background: #ebecec;
-    color: 20%; }
+    color: red; }
   .no-js .top-bar-section ul li:active > a {
     background: #ebecec;
-    color: 20%; }
+    color: none; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
     position: static !important;
@@ -5422,5 +5422,7 @@ th.hide-for-touch {
     display: block; }
     .top-bar-section .centered-nav ul li {
       float: left; }
+      .top-bar-section .centered-nav ul li a {
+        display: initial; }
       .top-bar-section .centered-nav ul li:last-child a {
         margin-right: 0; }
