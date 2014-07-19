@@ -1,24 +1,28 @@
 // Author: Nathan Birrell
-
-.top-bar-section {
-.centered-nav {
-  max-width: 600px;
-  margin: 0 auto;
+.top-bar-section nav {
+  text-align: center;
+  margin: 20px;
+  font-size: 0; /* Trick! */
 
   ul {
-    margin: 0 auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: block;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+  }
 
-    li {
-      float: left;
+  li {
+    display: inline-block;
+    width: 22%;
 
-      a {display: initial;}
-
-      &:last-child {a {margin-right: 0;}}
+    a {
+      letter-spacing:5px;
+    }
+    a, a:visited {
+      text-transform: uppercase;
+      font-weight: $font-weight-light;
+    }
+    a:active, a.active {
+      font-weight: $font-weight-normal;
     }
   }
-}
 }
