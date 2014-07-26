@@ -1,5 +1,5 @@
   <footer class="row">
-    <div class="small-5 small-centered columns  text-center">
+    <div class="small-12 small-centered columns  text-center">
       <?php echo kirbytext($site->copyright()) ?>
     </div>
   </footer>

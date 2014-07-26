@@ -12,4 +12,5 @@ Description: Memla is a Melbourne-based landscape architecture firm.
 ----
 Keywords: memla, landscape architects, melbourne, australia
 ----
-Copyright: © Memla (date: Year) | Site: (link: http://nathanbirrell.me text: Nathan Birrell)
+Copyright: © Memla Pty Ltd (date: Year) | 03 8060 6813
+Site: (link: http://nathanbirrell.me text: Nathan Birrell)
