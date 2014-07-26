@@ -55,13 +55,28 @@
 // BODY
 // ===============
 
-
-
-// ===============
-// PAGE / ABOUT
-// ===============
-
+.row.page-body {
+  margin: 20px 0;
+}
 
 // ===============
-// PAGE / CONTACT
+// PAGE > ABOUT/HOME
+// ===============
+
+.about {
+  .col {
+    background-color: red;
+
+    @media #{$medium-up} {
+      width: 28%;
+      display: inline-block;
+      margin: 0 1.5%;
+      padding: 12px;
+      word-wrap:break-word;
+    }
+  }
+}
+
+// ===============
+// PAGE > CONTACT
 // ===============

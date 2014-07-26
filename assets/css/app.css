@@ -4990,3 +4990,16 @@ th.hide-for-touch {
     .site-headings .subtitle {
       font-size: 1.4375rem;
       letter-spacing: 17px; } }
+
+.row.page-body {
+  margin: 20px 0; }
+
+.about .col {
+  background-color: red; }
+  @media only screen and (min-width: 40.063em) {
+    .about .col {
+      width: 28%;
+      display: inline-block;
+      margin: 0 1.5%;
+      padding: 12px;
+      word-wrap: break-word; } }

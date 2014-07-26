@@ -2,7 +2,7 @@
 
 <section class="content">
 
-  <div class="row">
+  <div class="row page-body">
     <div class="large-12 columns">
       <article>
         <h1><?php echo html($page->title()) ?></h1>
