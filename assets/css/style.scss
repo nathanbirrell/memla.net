@@ -1,4 +1,7 @@
 // Author: Nathan Birrell
+
+// Header
+
 .top-bar-section nav {
   text-align: center;
   margin: 20px;
@@ -23,6 +26,23 @@
     }
     a:active, a.active {
       font-weight: $font-weight-normal;
+    }
+  }
+}
+
+.site-headings {
+  .title {
+
+  }
+  .subtitle {
+    text-transform: uppercase;
+    font-weight: $font-weight-light;
+    font-size: $h5-font-size;
+    letter-spacing: 3px;
+
+    @media #{$medium-up} {
+      font-size: $h4-font-size;
+      letter-spacing: 18px;
     }
   }
 }

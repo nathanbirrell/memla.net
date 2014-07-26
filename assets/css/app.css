@@ -2899,7 +2899,7 @@ kbd {
   background: white;
   z-index: 50;
   min-width: 100%;
-  padding: 0 !important; }
+  padding: 10px; }
   [data-magellan-expedition] .sub-nav, [data-magellan-expedition-clone] .sub-nav {
     margin-bottom: 0; }
     [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
@@ -4976,3 +4976,13 @@ th.hide-for-touch {
       font-weight: 300; }
     .top-bar-section nav li a:active, .top-bar-section nav li a.active {
       font-weight: 400; }
+
+.site-headings .subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.125rem;
+  letter-spacing: 3px; }
+  @media only screen and (min-width: 40.063em) {
+    .site-headings .subtitle {
+      font-size: 1.4375rem;
+      letter-spacing: 18px; } }

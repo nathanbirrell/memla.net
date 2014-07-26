@@ -27,8 +27,9 @@
 
   <!-- body content here -->
 
-  <div class="row">
+  <div class="row site-headings">
     <div class="small-11 small-centered columns">
-      <h1 class="text-center"><?php echo html($site->title_short()) ?></h1>
+      <h1 class="text-center title"><?php echo html($site->title_short()) ?></h1>
+      <h2 class="text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
     </div>
   </div>
