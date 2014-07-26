@@ -4967,8 +4967,12 @@ th.hide-for-touch {
     margin: 0;
     list-style-type: none; }
   .top-bar-section nav li {
-    display: inline-block;
-    width: 22%; }
+    display: block;
+    width: 100%; }
+    @media only screen and (min-width: 40.063em) {
+      .top-bar-section nav li {
+        display: inline-block;
+        width: 22%; } }
     .top-bar-section nav li a {
       letter-spacing: 5px; }
     .top-bar-section nav li a, .top-bar-section nav li a:visited {
@@ -4982,7 +4986,7 @@ th.hide-for-touch {
   font-weight: 300;
   font-size: 1.125rem;
   letter-spacing: 3px; }
-  @media only screen and (min-width: 40.063em) {
+  @media only screen and (min-width: 64.063em) {
     .site-headings .subtitle {
       font-size: 1.4375rem;
-      letter-spacing: 18px; } }
+      letter-spacing: 17px; } }
