@@ -56,7 +56,8 @@
 // ===============
 
 .row.page-body {
-  margin: 20px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 // ===============
@@ -65,14 +66,23 @@
 
 .about {
   .col {
-    background-color: red;
+    // background-color: red;
+    text-align: center;
 
     @media #{$medium-up} {
-      width: 28%;
-      display: inline-block;
-      margin: 0 1.5%;
       padding: 12px;
       word-wrap:break-word;
+    }
+
+    p {
+      text-align: left;
+      font-weight: $font-weight-light;
+      font-size: $h4-font-size;
+    }
+
+    i {
+      color: $primary-color;
+      margin: 14px 0;
     }
   }
 }

@@ -4,31 +4,16 @@ Title: About
 
 col_1:
 
-Yay! If you are seeing this, the installation of Kirby worked :)
-Now just give the links in the menu a try to see if URL redirection works as well.
-
-Check out the docs: <http://getkirby.com/docs> if you run into any problems or send me an email: <bastian@getkirby.com>
-
-Have fun with Kirby!
+Memla is a Melbourne based landscape architecture firm. Our practice is driven by a team of self-motivated people and led by Matt Mcfall.
 
 ----
 
 col_2:
 
-Yay! If you are seeing this, the installation of Kirby worked :)
-Now just give the links in the menu a try to see if URL redirection works as well.
-
-Check out the docs: <http://getkirby.com/docs> if you run into any problems or send me an email: <bastian@getkirby.com>
-
-Have fun with Kirby!
+We invest heavily from the outset in the latest technology to provide our clients with a cost effective and flexible means of communicating design concepts.
 
 ----
 
 col_3:
 
-Yay! If you are seeing this, the installation of Kirby worked :)
-Now just give the links in the menu a try to see if URL redirection works as well.
-
-Check out the docs: <http://getkirby.com/docs> if you run into any problems or send me an email: <bastian@getkirby.com>
-
-Have fun with Kirby!
+We work on all types of projects ranging from detailed residential, through to large commercial, campus and urban design projects.
