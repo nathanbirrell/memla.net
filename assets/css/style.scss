@@ -99,12 +99,15 @@
     }
   }
   person {
-    background-color: red;
     word-wrap: break-word;
     padding: 15px;
 
     p {
       margin: 0;
     }
+  }
+  img {
+    width: 100%;
+    height: auto;
   }
 }
