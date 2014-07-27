@@ -1,5 +1,0 @@
-name: Test Person
-----
-phone: 0400 123 123
-----
-email: test@memla.net

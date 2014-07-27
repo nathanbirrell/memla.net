@@ -2,7 +2,7 @@
 
 <section class="content">
 
-  <div class="row page-body about">
+  <div class="row section about">
       <article class="medium-4 columns col">
         <i class="fa fa-users fa-5x"></i>
         <?php echo kirbytext($page->col_1()) ?>

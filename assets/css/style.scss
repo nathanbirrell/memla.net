@@ -55,7 +55,7 @@
 // BODY
 // ===============
 
-.row.page-body {
+.row.section {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -101,5 +101,10 @@
   person {
     background-color: red;
     word-wrap: break-word;
+    padding: 15px;
+
+    p {
+      margin: 0;
+    }
   }
 }

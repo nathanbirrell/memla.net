@@ -3,3 +3,7 @@ Title: Contact
 people_title: People
 ----
 find_title: Find us
+----
+find_address: addr
+----
+find_image: assets/img/find.png

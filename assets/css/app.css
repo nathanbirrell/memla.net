@@ -4993,7 +4993,7 @@ th.hide-for-touch {
       font-size: 1.4375rem;
       letter-spacing: 17px; } }
 
-.row.page-body {
+.row.section {
   margin-top: 40px;
   margin-bottom: 40px; }
 
@@ -5021,4 +5021,7 @@ th.hide-for-touch {
       margin-left: 16.66667% !important; } }
 .contact person {
   background-color: red;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  padding: 15px; }
+  .contact person p {
+    margin: 0; }
