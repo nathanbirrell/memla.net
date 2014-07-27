@@ -1,8 +1,5 @@
 Title: Contact
 ----
-
 people_title: People
-
 ----
-
 find_title: Find us
