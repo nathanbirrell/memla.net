@@ -11,9 +11,9 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.min.css">
 
-    <script src="assets/js/vendor/modernizr.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
 
   </head>
 

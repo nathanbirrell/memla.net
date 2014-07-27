@@ -21,7 +21,7 @@ module.exports = function(grunt){
             // },
             css: {
                 files: ['assets/css/**/**/*'],
-                tasks: ['sass'/*,'cssmin'*/]
+                tasks: ['sass','cssmin']
             },
             tmpl: {
               files: ['site/templates/*','site/snippets/*','site/plugins/*'],
@@ -44,43 +44,43 @@ module.exports = function(grunt){
             }
         },
 
-        // uglify: {
-        //     options: {
-        //       mangle: false //To prevent changes to your variable and function names
-        //     },
-        //     build: {
-        //         files: {
-        //             'assets/js/vendor/*.min.js': ['assets/js/vendor/*.js']
-        //         }
-        //     }
-        // },
-
-        imagemin: {
-          png: {
+        uglify: {
             options: {
-              optimizationLevel: 7 //Compression level
+              mangle: false //To prevent changes to your variable and function names
             },
-            files: [{
-              expand: true, //Dynamic expansion
-              cwd: 'assets/img/uncompressed',
-              src: ['assets/img/uncompressed/*.png'],
-              dest: 'assets/img',
-              ext: '.png'
-            }]
-          },
-          jpg: {
-            options: {
-            progressive: true //Lossless or progressive conversion
-            },
-            files: [{
-              expand: true,
-              cwd: 'assets/img/uncompressed',
-              src: ['assets/img/uncompressed/*.jpg'],
-              dest: 'assets/img/folder',
-              ext: '.jpg'
-            }]
-          }
+            build: {
+                files: {
+                    'assets/js/jquery.min.js': ['assets/js/vendor/jquery.js']
+                }
+            }
         },
+
+        // imagemin: {
+        //   png: {
+        //     options: {
+        //       optimizationLevel: 7 //Compression level
+        //     },
+        //     files: [{
+        //       expand: true, //Dynamic expansion
+        //       cwd: 'assets/img/uncompressed',
+        //       src: ['assets/img/uncompressed/*.png'],
+        //       dest: 'assets/img',
+        //       ext: '.png'
+        //     }]
+        //   },
+        //   jpg: {
+        //     options: {
+        //     progressive: true //Lossless or progressive conversion
+        //     },
+        //     files: [{
+        //       expand: true,
+        //       cwd: 'assets/img/uncompressed',
+        //       src: ['assets/img/uncompressed/*.jpg'],
+        //       dest: 'assets/img/folder',
+        //       ext: '.jpg'
+        //     }]
+        //   }
+        // },
 
         php: {
           all: {
@@ -112,6 +112,7 @@ module.exports = function(grunt){
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('server', ['open','php']);
+    grunt.registerTask('build',['uglify']);
     // grunt.registerTask('build',  ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 
 };
