@@ -86,7 +86,7 @@ module.exports = function(grunt){
           all: {
             options: {
               port: 7007,
-              hostname: '10.0.1.3',
+              hostname: 'localhost',
               base: '',
               keepalive: true
             }
@@ -95,7 +95,7 @@ module.exports = function(grunt){
 
         open: {
           all: {
-            path: 'http://10.0.1.3:7007',
+            path: 'http://localhost:7007',
             app: 'Google Chrome'
           }
         }
@@ -111,7 +111,7 @@ module.exports = function(grunt){
     });
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('server', ['open','php']);
+    grunt.registerTask('server', ['php']);
     grunt.registerTask('build',['uglify']);
     // grunt.registerTask('build',  ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 

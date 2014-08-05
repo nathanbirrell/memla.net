@@ -16,7 +16,7 @@ RewriteEngine on
 #
 # RewriteBase /mysite
 #
-RewriteBase /
+RewriteBase /Sites/memla.net/
 
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]
@@ -46,6 +46,6 @@ RewriteRule ^(.*) index.php [L]
 # Additional recommended values
 # Remove comments for those you want to use.
 #
-# AddDefaultCharset UTF-8
-#
-# php_flag short_open_tag on
+AddDefaultCharset UTF-8
+
+php_flag short_open_tag on
