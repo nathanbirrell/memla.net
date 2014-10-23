@@ -4985,17 +4985,13 @@ th.hide-for-touch {
 
 .site-headings .subtitle {
   text-transform: uppercase;
-  font-weight: 300;
   font-size: 1.125rem;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  font-weight: 300; }
   @media only screen and (min-width: 64.063em) {
     .site-headings .subtitle {
       font-size: 1.4375rem;
       letter-spacing: 17px; } }
-
-.row.section {
-  margin-top: 40px;
-  margin-bottom: 40px; }
 
 .about .col {
   text-align: center; }
@@ -5005,8 +5001,8 @@ th.hide-for-touch {
       word-wrap: break-word; } }
   .about .col p {
     text-align: left;
-    font-weight: 300;
-    font-size: 1.4375rem; }
+    font-size: 1.4375rem;
+    font-weight: 300; }
   .about .col i {
     color: #336699;
     margin: 14px 0; }
@@ -5027,3 +5023,21 @@ th.hide-for-touch {
 .contact img {
   width: 100%;
   height: auto; }
+
+.row.section {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+body.background-image {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  body.background-image a, body.background-image a:visited, body.background-image a:active, body.background-image ul, body.background-image li, body.background-image p, body.background-image h1, body.background-image h2, body.background-image h3, body.background-image h4, body.background-image h5, body.background-image h6, body.background-image i {
+    color: #ebecec; }
+  body.background-image .contact a, body.background-image .contact a:visited, body.background-image .contact a:active, body.background-image .contact ul, body.background-image .contact li, body.background-image .contact p, body.background-image .contact h1, body.background-image .contact h2, body.background-image .contact h3, body.background-image .contact h4, body.background-image .contact h5, body.background-image .contact h6, body.background-image .contact i, body.background-image .about a, body.background-image .about a:visited, body.background-image .about a:active, body.background-image .about ul, body.background-image .about li, body.background-image .about p, body.background-image .about h1, body.background-image .about h2, body.background-image .about h3, body.background-image .about h4, body.background-image .about h5, body.background-image .about h6, body.background-image .about i {
+    color: #ebecec; }

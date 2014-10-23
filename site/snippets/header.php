@@ -17,7 +17,7 @@
 
   </head>
 
-<body>
+<body class="background">
 
   <?php snippet('menu') ?>
 

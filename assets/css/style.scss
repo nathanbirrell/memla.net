@@ -8,7 +8,7 @@
 .top-bar-section nav {
   text-align: center;
   margin: 20px;
-  font-size: 0; /* Trick! */
+  font-size: 0; /* Trick! */ 
 
   ul {
     width: 100%;
@@ -39,26 +39,20 @@
 }
 
 .site-headings {
+  .title {
+    // font-weight: $font-weight-bold
+  }
   .subtitle {
     text-transform: uppercase;
-    font-weight: $font-weight-light;
     font-size: $h5-font-size;
     letter-spacing: 3px;
+    font-weight: $font-weight-light;
 
     @media #{$large-up} {
       font-size: $h4-font-size;
       letter-spacing: 17px;
     }
   }
-}
-
-// ===============
-// BODY
-// ===============
-
-.row.section {
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 // ===============
@@ -76,8 +70,8 @@
 
     p {
       text-align: left;
-      font-weight: $font-weight-light;
       font-size: $h4-font-size;
+      font-weight: $font-weight-light;
     }
 
     i {
@@ -110,5 +104,38 @@
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+
+// ===============
+// BODY
+// ===============
+
+.row.section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+body.background-image {
+  background-image: url('../img/bg.jpg');
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  a, a:visited, a:active, ul, li, p, h1, h2, h3, h4, h5, h6, i {
+    color: #ebecec;
+  }
+
+  .contact, .about {
+    a, a:visited, a:active, ul, li, p, h1, h2, h3, h4, h5, h6, i {
+      color: #ebecec;
+    }
   }
 }
