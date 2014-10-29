@@ -4,7 +4,7 @@
 
   <div class="row section projects">
 
-    <h1 class="row"><?php echo $page->page_title() ?></h1>
+    <h1 class="medium-12"><?php echo $page->page_title() ?></h1>
 
     <div class="small-8 small-offset-2">
 

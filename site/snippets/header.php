@@ -17,15 +17,18 @@
 
   </head>
 
-<body class="background-image">
+<body class="">
+<!-- <body class="background-image"> -->
 
   <?php snippet('menu') ?>
 
   <!-- body content here -->
 
-  <div class="row site-headings">
+  <div class="row site-headings text-center">
     <div class="small-11 small-centered columns">
-      <h1 class="text-center title"><?php echo html($site->title_short()) ?></h1>
-      <h2 class="text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
+      <h1 class="hide text-center title"><?php echo html($site->title_short()) ?></h1>
+      <h2 class="hide text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
+
+      <img class="text-center logo" src="assets/img/logo.png" />
     </div>
   </div>

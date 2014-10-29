@@ -4992,6 +4992,8 @@ th.hide-for-touch {
     .site-headings .subtitle {
       font-size: 1.4375rem;
       letter-spacing: 17px; } }
+.site-headings .logo {
+  margin-top: 12px; }
 
 .about .col {
   text-align: center; }
