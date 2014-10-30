@@ -5046,7 +5046,6 @@ th.hide-for-touch {
   .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
     z-index: 99;
     position: absolute;
-    bottom: -20px;
     margin: 0 15px; }
   .project .gallery-controllers .nextslide {
     right: 0px; }
