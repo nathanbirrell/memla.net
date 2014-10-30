@@ -8,14 +8,12 @@
 	</div>
 
 
-	<div class="row section">
-	    <div class="large-12 columns">
-			<article class="project-info">
-
+	<div class="row section project-info">
+	    <div class="medium-12 columns">
+			<article class="info">
 				<h1 class="project-title"><?php echo html($page->title()) ?></h1>
 				
 				<?php echo kirbytext($page->text()) ?>
-
 			</article>
 	    </div>
 	</div>
