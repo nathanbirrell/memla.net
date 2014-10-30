@@ -110,6 +110,33 @@
   }
 }
 
+// ===============
+// PAGE > PROJECTS
+// ===============
+
+.projects {
+  .project-summary {
+
+    .project-image {
+      width: 100%;
+      height: 150px;
+      @media #{$medium-up} {
+        height: 300px;
+      }
+    }
+    .project-title {
+      font-size: $h5-font-size;
+      margin-top: 15px;
+
+      a {
+        color: $body-font-color;
+      }
+    }
+    .project-summary {
+    }
+  }
+}
+
 
 // ===============
 // BODY

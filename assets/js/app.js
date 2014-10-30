@@ -1,0 +1,3 @@
+$(document).foundation();
+
+$('.imageFill').imagefill();

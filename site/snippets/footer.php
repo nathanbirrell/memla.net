@@ -6,8 +6,8 @@
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/jquery-imagefill.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

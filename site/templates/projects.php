@@ -1,21 +1,44 @@
 <?php snippet('header') ?>
 
-<section class="content contact">
+<?php 
 
-  <div class="row section projects">
+function trimDescription($string,$length=220,$append="&hellip;") {
+  $string = trim($string);
 
-    <h1 class="medium-12"><?php echo $page->page_title() ?></h1>
+  if(strlen($string) > $length) {
+    $string = wordwrap($string, $length);
+    $string = explode("\n", $string, 2);
+    $string = $string[0] . $append;
+  }
+
+  return $string;
+}
+
+?>
+
+<section class="content projects">
+
+  <div class="row section">
+
+    <h1 class="small-12 small-offset-2"><?php echo $page->page_title() ?></h1>
 
     <div class="small-8 small-offset-2">
 
       <?php foreach($page->children() as $project): ?>
-        <?php
-          // prep values
-          $phone_stripped = preg_replace('/\s+/', '', $project->phone());
+
+        <?php 
+          $project_image = $project->images()->first(); 
         ?>
 
-        <project class="medium-4 medium-offset-2 <?php if (!$project->hasNext()) {echo "end";} ?>">
-          <p><strong><?php echo $project->title() ?></strong></p>
+        <project class="medium-4 medium-offset-2 project-summary">
+          
+          <div class="project-image imageFill clearfix">
+            <img src="<?php echo $project_image->url() ?>">
+          </div>
+
+          <h2 class="project-title"><a href="<?php echo $project->url() ?>"><strong><?php echo $project->title() ?></strong></a></h2>
+
+          <p class="project-description"><?php echo trimDescription($project->text()) ?></p>
         </project>
 
       <?php endforeach ?>
