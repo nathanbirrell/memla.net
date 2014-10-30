@@ -5038,63 +5038,69 @@ th.hide-for-touch {
   .projects .project-summary .project-title a {
     color: #222222; }
 
-.project {
-  /* 
-   * below 900px, switch to percentage based responsive height.
-   * padding of 33.333% is calculated by using the 
-   * image ratio 300px/900px = .333 * 100% = 33.333% 
-   */ }
-  .project .gallery-controllers {
+.project .gallery-controllers {
+  position: absolute;
+  width: 100%;
+  color: #FFF;
+  font-size: 44px; }
+  .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
+    z-index: 99;
     position: absolute;
-    height: 50%;
-    width: 100%;
-    color: #FFF;
-    font-size: 44px; }
-    .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
-      z-index: 99;
-      position: absolute;
-      bottom: -20px;
-      margin: 0 15px; }
-    .project .gallery-controllers .nextslide {
-      right: 0px; }
-    @media only screen and (min-width: 40.063em) {
-      .project .gallery-controllers {
-        font-size: 74px; }
-        .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
-          bottom: -34px; } }
-  .project .fluidHeight {
-    position: relative;
-    width: 100%;
-    height: 500px; }
-  @media screen and (max-width: 900px) {
-    .project .fluidHeight {
-      height: 0;
-      padding: 0 0 40% 0; } }
-  .project .sliderContainer {
+    bottom: -20px;
+    margin: 0 15px; }
+  .project .gallery-controllers .nextslide {
+    right: 0px; }
+  @media only screen and (min-width: 40.063em) {
+    .project .gallery-controllers {
+      font-size: 74px; }
+      .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
+        bottom: -34px; } }
+@media only screen and (min-width: 40.063em) {
+  .project .project-info {
+    padding-top: 120px; } }
+
+.project-page-body {
+  display: block;
+  position: relative;
+  top: -100%;
+  z-index: 1; }
+
+/* slider container */
+.iosSlider {
+  /* required */
+  position: absolute;
+  top: -206px;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  /* optional */
+  width: 100%;
+  height: 800px;
+  background-color: red;
+  /* slide */
+  /* slider */ }
+  .iosSlider .slider .slide {
+    /* required */
     position: absolute;
-    width: 100%;
-    height: 100%; }
-  .project .iosSlider {
+    display: block;
+    /* optional */
     width: 100%;
     height: 100%;
-    background: #aaa; }
-  .project .iosSlider .slider {
+    padding: 0 0 0 0;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .iosSlider .slider {
+    /* required */
     width: 100%;
-    height: 100%; }
-  .project .iosSlider .slider .item {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 900px;
-    width: 100%;
-    height: 100%; }
-  .project .iosSlider .slider .item img {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto; }
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-padding-start: 0px; }
 
 body {
   overflow-y: hidden; }
@@ -5113,8 +5119,6 @@ body.background-image {
   -o-background-size: cover;
   background-size: cover; }
   body.background-image a, body.background-image a:visited, body.background-image a:active, body.background-image ul, body.background-image li, body.background-image p, body.background-image h1, body.background-image h2, body.background-image h3, body.background-image h4, body.background-image h5, body.background-image h6, body.background-image i, body.background-image img {
-    color: #ebecec;
-    opacity: .9; }
+    color: #ebecec; }
   body.background-image .contact a, body.background-image .contact a:visited, body.background-image .contact a:active, body.background-image .contact ul, body.background-image .contact li, body.background-image .contact p, body.background-image .contact h1, body.background-image .contact h2, body.background-image .contact h3, body.background-image .contact h4, body.background-image .contact h5, body.background-image .contact h6, body.background-image .contact i, body.background-image .contact img, body.background-image .about a, body.background-image .about a:visited, body.background-image .about a:active, body.background-image .about ul, body.background-image .about li, body.background-image .about p, body.background-image .about h1, body.background-image .about h2, body.background-image .about h3, body.background-image .about h4, body.background-image .about h5, body.background-image .about h6, body.background-image .about i, body.background-image .about img {
-    color: #ebecec;
-    opacity: .9; }
+    color: #ebecec; }

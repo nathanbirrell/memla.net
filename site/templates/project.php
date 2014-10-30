@@ -2,42 +2,23 @@
 
 <section class="content project">
 
-  <div class="row section">
-    <div class="large-12 columns">
+	<div class="gallery-controllers">
+		<span class="prevslide fa fa-angle-left" style="cursor: pointer;"></span>
+		<span class="nextslide fa fa-angle-right" style="cursor: pointer;"></span>
+	</div>
 
-    	<div class = 'fluidHeight'>
 
-    		<div class="gallery-controllers">
-				<span class="prevslide fa fa-angle-left" style="cursor: pointer;"></span>
-				<span class="nextslide fa fa-angle-right" style="cursor: pointer;"></span>
-			</div>
-			
-			<div class = 'sliderContainer'>
-			
-				<div class = 'iosSlider'>
-					<div class = 'slider'>
+	<div class="row section">
+	    <div class="large-12 columns">
+			<article class="project-info">
 
-						<?php foreach($page->images() as $img):?>
-							<div class = 'item imageFill'>
-								<img src = '<?php echo $img->url() ?>' />
-							</div>
-						<?php endforeach ?>
-					
-					</div>
-				</div>
-			
-			</div>
-		
-		</div>
+				<h1 class="project-title"><?php echo html($page->title()) ?></h1>
+				
+				<?php echo kirbytext($page->text()) ?>
 
-		<article>
-
-		<h1><?php echo html($page->title()) ?></h1>
-		<?php echo kirbytext($page->text()) ?>
-
-		</article>
-    </div>
-  </div>
+			</article>
+	    </div>
+	</div>
 
 </section>
 

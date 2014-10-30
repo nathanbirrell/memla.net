@@ -145,7 +145,6 @@
 
   .gallery-controllers {
     position: absolute;
-    height: 50%;
     width: 100%;
     color: #FFF;
     font-size: 44px;
@@ -173,62 +172,60 @@
     }
   }
 
-  .fluidHeight {
-    position: relative;
-    width: 100%;
-    height: 500px;
-  }
-  
-  /* 
-   * below 900px, switch to percentage based responsive height.
-   * padding of 33.333% is calculated by using the 
-   * image ratio 300px/900px = .333 * 100% = 33.333% 
-   */
-  @media screen and (max-width: 900px) {
-    
-    .fluidHeight {
-      height: 0;
-      padding: 0 0 40% 0;
+  .project-info {
+    @media #{$medium-up} {
+      padding-top: 120px;
     }
-    
   }
-  
-  .sliderContainer {
+}
+
+.project-page-body {
+  display: block;
+  position: relative;
+  top: -100%;
+  z-index: 1;
+}
+
+/* slider container */
+.iosSlider {
+    /* required */
     position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-
-  .iosSlider {
-    width: 100%;
-    height: 100%;
-    background: #aaa;
-  }
-  
-  .iosSlider .slider {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .iosSlider .slider .item {
-    position: relative;
-    top: 0;
+    // display: inline-block;
+    top: -206px;
     left: 0;
+    overflow: hidden;
+    z-index: -1;
     
-    max-width: 900px;
+    /* optional */
     width: 100%;
-    height: 100%;
-  }
-  
-  .iosSlider .slider .item img {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-  }
+    height: 800px;
+    background-color: red;
 
+    /* slide */
+    .slider .slide {
+      /* required */
+      position: absolute;
+      display: block;
+      /* optional */
+      width: 100%;
+      height: 100%;
+      padding: 0 0 0 0;
+      background-attachment: scroll;
+      background-clip: border-box;
+      background-color: transparent;
+      background-origin: padding-box;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* slider */
+    .slider {
+        /* required */
+        width: 100%;
+        height: 100%;
+        margin: 0;padding: 0;-webkit-padding-start: 0px;
+    }
 }
 
 
@@ -259,13 +256,13 @@ body.background-image {
 
   a, a:visited, a:active, ul, li, p, h1, h2, h3, h4, h5, h6, i, img {
     color: #ebecec;
-    opacity: .9;
+    // opacity: .9;
   }
 
   .contact, .about {
     a, a:visited, a:active, ul, li, p, h1, h2, h3, h4, h5, h6, i, img {
       color: #ebecec;
-      opacity: .9;
+      // opacity: .9;
     }
   }
 }

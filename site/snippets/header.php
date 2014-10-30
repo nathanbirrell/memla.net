@@ -17,8 +17,28 @@
 
   </head>
 
-<body class="">
+
 <!-- <body class="background-image"> -->
+
+  <?php if ($page->template() == "project") { ?>
+    <body class="background-image">
+      <div class = 'iosSlider'>
+          <!-- slider -->
+          <ul class = 'slider'>
+              <!-- slides -->
+            
+            <?php foreach($page->images() as $img):?>
+              <li class="slide" style="background-image: url(<?php echo $img->url() ?>);"></li>
+            <?php endforeach ?>
+
+          </ul>
+      </div>
+
+      <!-- start project page body div -->
+      <div class="project-page-body">
+  <?php } else {; ?>
+    <body class="">
+  <?php }; ?>
 
   <?php snippet('menu') ?>
 
