@@ -5045,9 +5045,23 @@ th.hide-for-touch {
    * image ratio 300px/900px = .333 * 100% = 33.333% 
    */ }
   .project .gallery-controllers {
-    font-size: 34px;
+    position: absolute;
+    height: 50%;
     width: 100%;
-    z-index: 99; }
+    color: #FFF;
+    font-size: 44px; }
+    .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
+      z-index: 99;
+      position: absolute;
+      bottom: -20px;
+      margin: 0 15px; }
+    .project .gallery-controllers .nextslide {
+      right: 0px; }
+    @media only screen and (min-width: 40.063em) {
+      .project .gallery-controllers {
+        font-size: 74px; }
+        .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
+          bottom: -34px; } }
   .project .fluidHeight {
     position: relative;
     width: 100%;
@@ -5055,7 +5069,7 @@ th.hide-for-touch {
   @media screen and (max-width: 900px) {
     .project .fluidHeight {
       height: 0;
-      padding: 0 0 33.333% 0; } }
+      padding: 0 0 40% 0; } }
   .project .sliderContainer {
     position: absolute;
     width: 100%;

@@ -144,66 +144,90 @@
 .project {
 
   .gallery-controllers {
-    font-size: 34px;
+    position: absolute;
+    height: 50%;
     width: 100%;
-    z-index: 99;
+    color: #FFF;
+    font-size: 44px;
+
+    .prevslide, .nextslide {
+      z-index: 99;
+      position: absolute;
+      bottom: -20px;
+      margin: 0 15px;
+    }
+
+    .prevslide {
+
+    }
+    .nextslide {
+      right: 0px;
+    }
+
+    @media #{$medium-up} {
+      font-size: 74px;
+
+      .prevslide, .nextslide {
+        bottom: -34px;
+      }
+    }
   }
 
   .fluidHeight {
-        position: relative;
-        width: 100%;
-        height: 500px;
-      }
-      
-      /* 
-       * below 900px, switch to percentage based responsive height.
-       * padding of 33.333% is calculated by using the 
-       * image ratio 300px/900px = .333 * 100% = 33.333% 
-       */
-      @media screen and (max-width: 900px) {
-        
-        .fluidHeight {
-          height: 0;
-          padding: 0 0 33.333% 0;
-        }
-        
-      }
-      
-      .sliderContainer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  /* 
+   * below 900px, switch to percentage based responsive height.
+   * padding of 33.333% is calculated by using the 
+   * image ratio 300px/900px = .333 * 100% = 33.333% 
+   */
+  @media screen and (max-width: 900px) {
+    
+    .fluidHeight {
+      height: 0;
+      padding: 0 0 40% 0;
+    }
+    
+  }
+  
+  .sliderContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
-      .iosSlider {
-        width: 100%;
-        height: 100%;
-        background: #aaa;
-      }
-      
-      .iosSlider .slider {
-        width: 100%;
-        height: 100%;
-      }
-      
-      .iosSlider .slider .item {
-        position: relative;
-        top: 0;
-        left: 0;
-        
-        max-width: 900px;
-        width: 100%;
-        height: 100%;
-      }
-      
-      .iosSlider .slider .item img {
-        position: relative;
-        top: 0;
-        left: 0;
-        max-width: 900px;
-        width: 100%;
-        margin: 0 auto;
-      }
+  .iosSlider {
+    width: 100%;
+    height: 100%;
+    background: #aaa;
+  }
+  
+  .iosSlider .slider {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .iosSlider .slider .item {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .iosSlider .slider .item img {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
 }
 

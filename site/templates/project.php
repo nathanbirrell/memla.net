@@ -6,38 +6,28 @@
     <div class="large-12 columns">
 
     	<div class = 'fluidHeight'>
+
+    		<div class="gallery-controllers">
+				<span class="prevslide fa fa-angle-left" style="cursor: pointer;"></span>
+				<span class="nextslide fa fa-angle-right" style="cursor: pointer;"></span>
+			</div>
 			
 			<div class = 'sliderContainer'>
 			
 				<div class = 'iosSlider'>
 					<div class = 'slider'>
-					
-						<div class = 'item imageFill'>
-							<img src = 'https://unsplash.imgix.net/reserve/Y1hediOeRoya666XCjYg_forest.jpg?q=75&fm=jpg&s=005a5782dc5648a3acb4ae1fc0c8380c' />
-						</div>
-						
-						<div class = 'item imageFill'>
-							<img src = 'https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&fm=jpg&s=d8cce13e5d977aeec5bdbec256987adf' />
-						</div>
-						
-						<div class = 'item imageFill'>
-							<img src = 'https://unsplash.imgix.net/reserve/D9xlw7UxTBqQw5sLf8cJ_reef%20insp-72.jpg?q=75&fm=jpg&s=a46f72e373f7af2b3bba993f565e24be' />
-						</div>
-						
-						<div class = 'item imageFill'>
-							<img src = 'https://unsplash.imgix.net/45/YzgdnQ4TTumS8xR9YRKJ_IMG_2761%20(1).jpg?q=75&fm=jpg&s=00fed6480f145821fa3c2fec215e6ca7' />
-						</div>
+
+						<?php foreach($page->images() as $img):?>
+							<div class = 'item imageFill'>
+								<img src = '<?php echo $img->url() ?>' />
+							</div>
+						<?php endforeach ?>
 					
 					</div>
 				</div>
 			
 			</div>
 		
-		</div>
-
-		<div class="gallery-controllers">
-			<span class="prevslide" style="cursor: pointer;">&lt;</span>
-			<span class="nextslide" style="cursor: pointer;">&gt;</span>
 		</div>
 
 		<article>
