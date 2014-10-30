@@ -34,7 +34,12 @@
 			</div>
 		
 		</div>
-    
+
+		<div class="gallery-controllers">
+			<span class="prevslide" style="cursor: pointer;">&lt;</span>
+			<span class="nextslide" style="cursor: pointer;">&gt;</span>
+		</div>
+
 		<article>
 
 		<h1><?php echo html($page->title()) ?></h1>

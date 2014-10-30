@@ -6,9 +6,11 @@ $(document).ready(function() {
 
 	$('.iosSlider').iosSlider({
 		snapToChildren: true,
-		desktopClickDrag: true,
+		desktopClickDrag: false,
 		infiniteSlider: true,
-		snapSlideCenter: true
+		snapSlideCenter: true,
+		navNextSelector:'.nextslide',
+	    navPrevSelector:'.prevslide'
 	});
-	
+
 });

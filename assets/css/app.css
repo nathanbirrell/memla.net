@@ -5044,6 +5044,10 @@ th.hide-for-touch {
    * padding of 33.333% is calculated by using the 
    * image ratio 300px/900px = .333 * 100% = 33.333% 
    */ }
+  .project .gallery-controllers {
+    font-size: 34px;
+    width: 100%;
+    z-index: 99; }
   .project .fluidHeight {
     position: relative;
     width: 100%;
