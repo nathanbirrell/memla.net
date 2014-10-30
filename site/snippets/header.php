@@ -11,9 +11,9 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
 
-    <script src="assets/js/modernizr.min.js"></script>
+    <script src="/assets/js/modernizr.min.js"></script>
 
   </head>
 
@@ -29,6 +29,6 @@
       <h1 class="hide text-center title"><?php echo html($site->title_short()) ?></h1>
       <h2 class="hide text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
 
-      <img class="text-center logo" src="assets/img/logo.png" />
+      <img class="text-center logo" src="/assets/img/logo.png" />
     </div>
   </div>

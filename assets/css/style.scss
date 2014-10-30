@@ -137,10 +137,78 @@
   }
 }
 
+// ===============
+// PAGE > PROJECT
+// ===============
+
+.project {
+
+  .fluidHeight {
+        position: relative;
+        width: 100%;
+        height: 500px;
+      }
+      
+      /* 
+       * below 900px, switch to percentage based responsive height.
+       * padding of 33.333% is calculated by using the 
+       * image ratio 300px/900px = .333 * 100% = 33.333% 
+       */
+      @media screen and (max-width: 900px) {
+        
+        .fluidHeight {
+          height: 0;
+          padding: 0 0 33.333% 0;
+        }
+        
+      }
+      
+      .sliderContainer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .iosSlider {
+        width: 100%;
+        height: 100%;
+        background: #aaa;
+      }
+      
+      .iosSlider .slider {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .iosSlider .slider .item {
+        position: relative;
+        top: 0;
+        left: 0;
+        
+        max-width: 900px;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .iosSlider .slider .item img {
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+}
+
 
 // ===============
 // BODY
 // ===============
+
+body {
+  overflow-y:hidden;
+}
 
 .row.section {
   margin-top: 40px;
