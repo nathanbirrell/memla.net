@@ -4993,7 +4993,14 @@ th.hide-for-touch {
       font-size: 1.4375rem;
       letter-spacing: 17px; } }
 .site-headings .logo {
-  margin-top: 12px; }
+  margin-top: 6px;
+  height: 80px;
+  width: auto; }
+  @media only screen and (min-width: 40.063em) {
+    .site-headings .logo {
+      margin-top: 12px;
+      height: 150px;
+      width: auto; } }
 
 .about .col {
   text-align: center; }
@@ -5039,69 +5046,124 @@ th.hide-for-touch {
     color: #222222; }
 
 .project {
-  /* 
-   * below 900px, switch to percentage based responsive height.
-   * padding of 33.333% is calculated by using the 
-   * image ratio 300px/900px = .333 * 100% = 33.333% 
-   */ }
-  .project .gallery-controllers {
-    position: absolute;
-    height: 50%;
+  margin-top: -390px; }
+  .project .row.section.project-info {
+    margin-bottom: 0; }
+  @media only screen and (min-width: 40.063em) {
+    .project {
+      margin-top: -680px; }
+      .project .row.section.project-info {
+        margin-bottom: 40px; } }
+  .project .project-info {
     width: 100%;
-    color: #FFF;
-    font-size: 44px; }
-    .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
-      z-index: 99;
-      position: absolute;
-      bottom: -20px;
-      margin: 0 15px; }
-    .project .gallery-controllers .nextslide {
-      right: 0px; }
-    @media only screen and (min-width: 40.063em) {
-      .project .gallery-controllers {
-        font-size: 74px; }
-        .project .gallery-controllers .prevslide, .project .gallery-controllers .nextslide {
-          bottom: -34px; } }
-  .project .fluidHeight {
     position: relative;
-    width: 100%;
-    height: 500px; }
-  @media screen and (max-width: 900px) {
-    .project .fluidHeight {
-      height: 0;
-      padding: 0 0 40% 0; } }
-  .project .sliderContainer {
-    position: absolute;
-    width: 100%;
+    max-height: 290px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: black;
+    /* RGBa with opacity */
+    background-color: rgba(0, 0, 0, 0.5); }
+    .project .project-info h1 {
+      font-size: 1.4375rem;
+      text-align: center; }
+      @media only screen and (min-width: 40.063em) {
+        .project .project-info h1 {
+          font-size: 2.75rem;
+          text-align: left; } }
+    .project .project-info p {
+      display: none;
+      font-size: 24px;
+      font-weight: 200; }
+      @media only screen and (min-width: 40.063em) {
+        .project .project-info p {
+          display: initial; } }
+    @media only screen and (min-width: 40.063em) {
+      .project .project-info {
+        height: 290px; }
+        .project .project-info .info {
+          height: 270px;
+          overflow: scroll; } }
+    .project .project-info .gallery-controllers {
+      position: absolute;
+      width: 100%;
+      color: #FFF;
+      font-size: 44px;
+      top: 50%;
+      margin-top: -22px; }
+      .project .project-info .gallery-controllers .prevslide, .project .project-info .gallery-controllers .nextslide {
+        z-index: 99;
+        position: absolute;
+        margin: 0 15px; }
+      .project .project-info .gallery-controllers .nextslide {
+        right: 0px; }
+      @media only screen and (min-width: 40.063em) {
+        .project .project-info .gallery-controllers {
+          font-size: 74px;
+          margin-top: 0; }
+          .project .project-info .gallery-controllers .prevslide, .project .project-info .gallery-controllers .nextslide {
+            margin-top: -37px; } }
+
+.project-page-body {
+  display: block;
+  position: relative;
+  top: -100%;
+  z-index: 1;
+  height: 100%;
+  overflow: hidden; }
+  .project-page-body .spacer {
+    display: block;
+    position: relative;
     height: 100%; }
-  .project .iosSlider {
+
+/* slider container */
+.iosSlider {
+  position: absolute;
+  top: -206px;
+  left: 0;
+  overflow: hidden;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  /* slide */
+  /* slider */ }
+  .iosSlider .slider .slide {
+    /* required */
+    position: absolute;
+    display: block;
+    /* optional */
     width: 100%;
     height: 100%;
-    background: #aaa; }
-  .project .iosSlider .slider {
+    padding: 0 0 0 0;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: transparent;
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .iosSlider .slider {
+    /* required */
     width: 100%;
-    height: 100%; }
-  .project .iosSlider .slider .item {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 900px;
-    width: 100%;
-    height: 100%; }
-  .project .iosSlider .slider .item img {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto; }
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-padding-start: 0px; }
 
-body {
-  overflow-y: hidden; }
+body.background-image {
+  overflow: hidden; }
 
 .row.section {
   margin-top: 40px;
   margin-bottom: 40px; }
+
+@media only screen and (max-width: 40em) {
+  footer {
+    padding-top: 32px; }
+    footer * {
+      font-size: 14px; } }
 
 body.background-image {
   background-image: url("../img/bg.jpg");
@@ -5111,10 +5173,9 @@ body.background-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
   body.background-image a, body.background-image a:visited, body.background-image a:active, body.background-image ul, body.background-image li, body.background-image p, body.background-image h1, body.background-image h2, body.background-image h3, body.background-image h4, body.background-image h5, body.background-image h6, body.background-image i, body.background-image img {
-    color: #ebecec;
-    opacity: .9; }
+    color: #ebecec; }
   body.background-image .contact a, body.background-image .contact a:visited, body.background-image .contact a:active, body.background-image .contact ul, body.background-image .contact li, body.background-image .contact p, body.background-image .contact h1, body.background-image .contact h2, body.background-image .contact h3, body.background-image .contact h4, body.background-image .contact h5, body.background-image .contact h6, body.background-image .contact i, body.background-image .contact img, body.background-image .about a, body.background-image .about a:visited, body.background-image .about a:active, body.background-image .about ul, body.background-image .about li, body.background-image .about p, body.background-image .about h1, body.background-image .about h2, body.background-image .about h3, body.background-image .about h4, body.background-image .about h5, body.background-image .about h6, body.background-image .about i, body.background-image .about img {
-    color: #ebecec;
-    opacity: .9; }
+    color: #ebecec; }
