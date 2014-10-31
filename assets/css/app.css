@@ -4959,46 +4959,48 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
-.top-bar-section nav {
+body.background-image .site-headings .heading-panel {
+  margin-top: -19px;
+  padding-top: 19px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #000;
+  border-radius: 5px; }
+.site-headings .top-bar-section nav {
   text-align: center;
-  margin: 20px;
-  font-size: 0;
-  /* Trick! */ }
-  .top-bar-section nav ul {
-    width: 100%;
-    margin: 0;
+  margin-top: 20px; }
+  .site-headings .top-bar-section nav ul {
     list-style-type: none; }
-  .top-bar-section nav li {
-    display: block;
-    width: 100%; }
-    @media only screen and (min-width: 40.063em) {
-      .top-bar-section nav li {
-        display: inline-block;
-        width: 22%; } }
-    .top-bar-section nav li a {
+  .site-headings .top-bar-section nav li {
+    display: block; }
+    .site-headings .top-bar-section nav li a {
       letter-spacing: 5px; }
-    .top-bar-section nav li a, .top-bar-section nav li a:visited {
+    .site-headings .top-bar-section nav li a, .site-headings .top-bar-section nav li a:visited {
       text-transform: uppercase;
       font-weight: 300; }
-    .top-bar-section nav li a:active, .top-bar-section nav li a.active {
+    .site-headings .top-bar-section nav li a:active, .site-headings .top-bar-section nav li a.active {
       font-weight: 400; }
-
+.site-headings .title {
+  text-transform: uppercase;
+  letter-spacing: 4px; }
 .site-headings .subtitle {
   text-transform: uppercase;
   font-size: 1.125rem;
   letter-spacing: 3px;
   font-weight: 300; }
+  @media only screen and (min-width: 40.063em) {
+    .site-headings .subtitle {
+      letter-spacing: 12px; } }
   @media only screen and (min-width: 64.063em) {
     .site-headings .subtitle {
       font-size: 1.4375rem;
       letter-spacing: 17px; } }
 .site-headings .logo {
-  margin-top: 6px;
+  margin: 6px 0 6px 0;
   height: 80px;
   width: auto; }
   @media only screen and (min-width: 40.063em) {
     .site-headings .logo {
-      margin-top: 12px;
+      margin: 18px 0 8px 0;
       height: 150px;
       width: auto; } }
 
@@ -5065,7 +5067,9 @@ th.hide-for-touch {
     /* Fallback for web browsers that don't support RGBa */
     background-color: black;
     /* RGBa with opacity */
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000; }
     .project .project-info h1 {
       font-size: 1.4375rem;
       text-align: center; }
@@ -5162,6 +5166,11 @@ body.background-image {
 @media only screen and (max-width: 40em) {
   footer {
     padding-top: 32px; }
+    footer * {
+      font-size: 14px; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  footer {
+    margin-top: 0; }
     footer * {
       font-size: 14px; } }
 

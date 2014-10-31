@@ -5,42 +5,43 @@
 // HEADER
 // ===============
 
-.top-bar-section nav {
-  text-align: center;
-  margin: 20px;
-  font-size: 0; /* Trick! */ 
-
-  ul {
-    width: 100%;
-    margin: 0;
-    list-style-type: none;
-  }
-
-  li {
-    display: block;
-    width: 100%;
-
-    @media #{$medium-up} {
-      display: inline-block;
-      width: 22%;
-    }
-
-    a {
-      letter-spacing:5px;
-    }
-    a, a:visited {
-      text-transform: uppercase;
-      font-weight: $font-weight-light;
-    }
-    a:active, a.active {
-      font-weight: $font-weight-normal;
-    }
-  }
-}
-
 .site-headings {
+
+  body.background-image & .heading-panel {
+    margin-top: -19px;
+    padding-top: 19px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+
+  .top-bar-section nav {
+    text-align: center;
+    margin-top: 20px;
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: block;
+
+      a {
+        letter-spacing:5px;
+      }
+      a, a:visited {
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+      }
+      a:active, a.active {
+        font-weight: $font-weight-normal;
+      }
+    }
+  }
+
   .title {
-    // font-weight: $font-weight-bold
+    text-transform: uppercase;
+    letter-spacing: 4px;
   }
   .subtitle {
     text-transform: uppercase;
@@ -48,18 +49,21 @@
     letter-spacing: 3px;
     font-weight: $font-weight-light;
 
+    @media #{$medium-up} {
+      letter-spacing: 12px;
+    }
     @media #{$large-up} {
       font-size: $h4-font-size;
       letter-spacing: 17px;
     }
   }
   .logo {
-    margin-top: 6px;
+    margin: 6px 0 6px 0;
     height: 80px;
     width: auto;
 
     @media #{$medium-up} {
-      margin-top: 12px;
+      margin: 18px 0 8px 0;
       height: 150px;
       width: auto;
     }
@@ -174,6 +178,9 @@
     background-color: rgb(0, 0, 0);
     /* RGBa with opacity */
     background-color: rgba(0, 0, 0, 0.5);
+
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 
     h1 {
       font-size: $h4-font-size;
@@ -310,6 +317,12 @@ body.background-image {
 footer {
   @media #{$small-only} {
     padding-top: 32px;
+    * {
+      font-size: 14px;
+    }
+  }
+  @media #{$medium-only} {
+    margin-top: 0;
     * {
       font-size: 14px;
     }

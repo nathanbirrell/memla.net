@@ -16,4 +16,4 @@ We invest heavily from the outset in the latest technology to provide our client
 
 col_3:
 
-We work on all types of projects ranging from detailed residential, through to large commercial, campus and urban design projects.
+We work on all types of [projects](/projects) ranging from detailed residential, through to large commercial, campus and urban design projects.

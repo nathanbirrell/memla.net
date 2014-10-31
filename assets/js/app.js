@@ -35,4 +35,14 @@ $(document).ready(function() {
 		}, 400);
 	}
 
+	if ($('body.background-image').is(":visible")) {
+		// Swap for text
+		// $('img.logo').addClass('hide');
+		// $('h1.title').removeClass('hide');
+		// $('h2.subtitle').removeClass('hide');
+
+		// Swap for image
+		$('img.logo').attr('src','/assets/img/logo-white.png');
+	}
+
 });
