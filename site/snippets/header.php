@@ -49,6 +49,6 @@
       <h1 class="hide text-center title"><?php echo html($site->title_short()) ?></h1>
       <h2 class="hide text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
 
-      <img class="text-center logo" src="/assets/img/logo.png" />
+      <a href="/"><img class="text-center logo" src="/assets/img/logo.png" /></a>
     </div>
   </div>

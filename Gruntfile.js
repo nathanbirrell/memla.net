@@ -86,7 +86,7 @@ module.exports = function(grunt){
           all: {
             options: {
               port: 7007,
-              hostname: 'localhost',
+              hostname: '192.168.1.3',
               base: '',
               keepalive: true
             }
@@ -95,7 +95,7 @@ module.exports = function(grunt){
 
         open: {
           all: {
-            path: 'http://localhost:7007',
+            path: 'http://192.168.1.3:7007',
             app: 'Google Chrome'
           }
         }

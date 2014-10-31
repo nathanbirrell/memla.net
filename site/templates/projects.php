@@ -20,9 +20,9 @@ function trimDescription($string,$length=220,$append="&hellip;") {
 
   <div class="row section">
 
-    <h1 class="small-12 small-offset-2"><?php echo $page->page_title() ?></h1>
+    <h1 class="small-10 small-centered columns"><?php echo $page->page_title() ?></h1>
 
-    <div class="small-8 small-offset-2">
+    <div class="small-10 small-centered columns">
 
       <?php foreach($page->children() as $project): ?>
 

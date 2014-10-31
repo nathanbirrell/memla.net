@@ -5101,16 +5101,18 @@ th.hide-for-touch {
         right: 0px; }
       @media only screen and (min-width: 40.063em) {
         .project .project-info .gallery-controllers {
-          font-size: 74px; }
+          font-size: 74px;
+          margin-top: 0; }
           .project .project-info .gallery-controllers .prevslide, .project .project-info .gallery-controllers .nextslide {
-            margin-top: -34px; } }
+            margin-top: -37px; } }
 
 .project-page-body {
   display: block;
   position: relative;
   top: -100%;
   z-index: 1;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
   .project-page-body .spacer {
     display: block;
     position: relative;
@@ -5118,16 +5120,13 @@ th.hide-for-touch {
 
 /* slider container */
 .iosSlider {
-  /* required */
   position: absolute;
   top: -206px;
   left: 0;
   overflow: hidden;
-  z-index: -1;
-  /* optional */
+  z-index: 99999;
   width: 100%;
   height: 100%;
-  min-height: 300px;
   /* slide */
   /* slider */ }
   .iosSlider .slider .slide {
@@ -5138,7 +5137,7 @@ th.hide-for-touch {
     width: 100%;
     height: 100%;
     padding: 0 0 0 0;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-clip: border-box;
     background-color: transparent;
     background-origin: padding-box;
@@ -5153,7 +5152,7 @@ th.hide-for-touch {
     padding: 0;
     -webkit-padding-start: 0px; }
 
-body {
+body.background-image {
   overflow: hidden; }
 
 .row.section {
@@ -5174,7 +5173,8 @@ body.background-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
   body.background-image a, body.background-image a:visited, body.background-image a:active, body.background-image ul, body.background-image li, body.background-image p, body.background-image h1, body.background-image h2, body.background-image h3, body.background-image h4, body.background-image h5, body.background-image h6, body.background-image i, body.background-image img {
     color: #ebecec; }
   body.background-image .contact a, body.background-image .contact a:visited, body.background-image .contact a:active, body.background-image .contact ul, body.background-image .contact li, body.background-image .contact p, body.background-image .contact h1, body.background-image .contact h2, body.background-image .contact h3, body.background-image .contact h4, body.background-image .contact h5, body.background-image .contact h6, body.background-image .contact i, body.background-image .contact img, body.background-image .about a, body.background-image .about a:visited, body.background-image .about a:active, body.background-image .about ul, body.background-image .about li, body.background-image .about p, body.background-image .about h1, body.background-image .about h2, body.background-image .about h3, body.background-image .about h4, body.background-image .about h5, body.background-image .about h6, body.background-image .about i, body.background-image .about img {
