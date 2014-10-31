@@ -11,9 +11,9 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="<?php echo u(); ?>assets/css/app.min.css">
 
-    <script src="/assets/js/modernizr.min.js"></script>
+    <script src="<?php echo u(); ?>assets/js/modernizr.min.js"></script>
 
   </head>
 
@@ -36,7 +36,6 @@
   <?php }; ?>
 
   
-
   <!-- body content here -->
 
   <div class="row site-headings text-center">
