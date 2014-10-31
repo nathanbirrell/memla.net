@@ -5045,53 +5045,65 @@ th.hide-for-touch {
   .projects .project-summary .project-title a {
     color: #222222; }
 
-@media only screen and (max-width: 40em) {
+.project {
+  margin-top: -390px; }
   .project .row.section.project-info {
-    margin-bottom: 0; } }
-.project .project-info {
-  width: 100%;
-  position: relative;
-  max-height: 300px;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: initial;
-  background-color: black;
-  opacity: 0.5; }
-  .project .project-info h1, .project .project-info p {
-    opacity: 1; }
-  .project .project-info h1 {
-    font-size: 1.4375rem;
-    text-align: center; }
-    @media only screen and (min-width: 40.063em) {
-      .project .project-info h1 {
-        font-size: 2.75rem;
-        text-align: left; } }
-  .project .project-info p {
-    display: none;
-    font-size: 24px;
-    font-weight: 200; }
-    @media only screen and (min-width: 40.063em) {
-      .project .project-info p {
-        display: initial; } }
-  .project .project-info .gallery-controllers {
-    position: absolute;
+    margin-bottom: 0; }
+  @media only screen and (min-width: 40.063em) {
+    .project {
+      margin-top: -680px; }
+      .project .row.section.project-info {
+        margin-bottom: 40px; } }
+  .project .project-info {
     width: 100%;
-    color: #FFF;
-    font-size: 44px;
-    top: 50%;
-    margin-top: -22px; }
-    .project .project-info .gallery-controllers .prevslide, .project .project-info .gallery-controllers .nextslide {
-      z-index: 99;
-      position: absolute;
-      margin: 0 15px; }
-    .project .project-info .gallery-controllers .nextslide {
-      right: 0px; }
+    position: relative;
+    max-height: 290px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: black;
+    /* RGBa with opacity */
+    background-color: rgba(0, 0, 0, 0.5); }
+    .project .project-info h1 {
+      font-size: 1.4375rem;
+      text-align: center; }
+      @media only screen and (min-width: 40.063em) {
+        .project .project-info h1 {
+          font-size: 2.75rem;
+          text-align: left; } }
+    .project .project-info p {
+      display: none;
+      font-size: 24px;
+      font-weight: 200; }
+      @media only screen and (min-width: 40.063em) {
+        .project .project-info p {
+          display: initial; } }
     @media only screen and (min-width: 40.063em) {
-      .project .project-info .gallery-controllers {
-        font-size: 74px; }
-        .project .project-info .gallery-controllers .prevslide, .project .project-info .gallery-controllers .nextslide {
-          margin-top: -34px; } }
+      .project .project-info {
+        height: 290px; }
+        .project .project-info .info {
+          height: 270px;
+          overflow: scroll; } }
+    .project .project-info .gallery-controllers {
+      position: absolute;
+      width: 100%;
+      color: #FFF;
+      font-size: 44px;
+      top: 50%;
+      margin-top: -22px; }
+      .project .project-info .gallery-controllers .prevslide, .project .project-info .gallery-controllers .nextslide {
+        z-index: 99;
+        position: absolute;
+        margin: 0 15px; }
+      .project .project-info .gallery-controllers .nextslide {
+        right: 0px; }
+      @media only screen and (min-width: 40.063em) {
+        .project .project-info .gallery-controllers {
+          font-size: 74px; }
+          .project .project-info .gallery-controllers .prevslide, .project .project-info .gallery-controllers .nextslide {
+            margin-top: -34px; } }
 
 .project-page-body {
   display: block;
@@ -5102,7 +5114,7 @@ th.hide-for-touch {
   .project-page-body .spacer {
     display: block;
     position: relative;
-    height: 20%; }
+    height: 100%; }
 
 /* slider container */
 .iosSlider {
