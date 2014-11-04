@@ -194,11 +194,12 @@
     p {
       display: none; // not for mobiles
 
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 200;
 
       @media #{$medium-up} {
         display: initial;
+        font-size: 24px;
       }
     }
 
