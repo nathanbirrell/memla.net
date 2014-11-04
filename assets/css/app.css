@@ -4995,12 +4995,12 @@ body.background-image .site-headings .heading-panel {
       font-size: 1.4375rem;
       letter-spacing: 17px; } }
 .site-headings .logo {
-  margin: 6px 0 6px 0;
+  margin: 8px 0 6px 0;
   height: 80px;
   width: auto; }
   @media only screen and (min-width: 40.063em) {
     .site-headings .logo {
-      margin: 18px 0 8px 0;
+      margin: 22px 0 8px 0;
       height: 150px;
       width: auto; } }
 
