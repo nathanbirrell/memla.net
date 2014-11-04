@@ -5079,17 +5079,28 @@ body.background-image .site-headings .heading-panel {
           text-align: left; } }
     .project .project-info p {
       display: none;
-      font-size: 24px;
       font-weight: 200; }
       @media only screen and (min-width: 40.063em) {
         .project .project-info p {
-          display: initial; } }
+          display: initial;
+          margin: auto;
+          font-size: 20px; } }
+  @media only screen and (min-width: 40.063em) and (min-width: 64.063em) {
+    .project .project-info p {
+      font-size: 26px; } }
+
     @media only screen and (min-width: 40.063em) {
+      .project .project-info {
+        height: 250px; }
+        .project .project-info .info {
+          height: 240px;
+          overflow: hidden; } }
+    @media only screen and (min-width: 64.063em) {
       .project .project-info {
         height: 290px; }
         .project .project-info .info {
           height: 270px;
-          overflow: scroll; } }
+          overflow: hidden; } }
     .project .project-info .gallery-controllers {
       position: absolute;
       width: 100%;

@@ -189,26 +189,36 @@
       @media #{$medium-up} {
         font-size: $h1-font-size;
         text-align: left;
-      }
+      } 
     }
     p {
-      display: none; // not for mobiles
-
-      font-size: 18px;
+      display: none; // hide for mobiles
       font-weight: 200;
 
       @media #{$medium-up} {
         display: initial;
-        font-size: 24px;
+        margin: auto;
+        font-size: 20px;
+
+        @media #{$large-up} {
+          font-size: 26px;
+        }        
       }
     }
 
+    // Dimensions of the project info panel
     @media #{$medium-up} {
-      height: 290px;
-
+      height: 250px; 
+      .info {
+        height: 240px;
+        overflow: hidden;
+      }
+    }
+    @media #{$large-up} {
+      height: 290px; 
       .info {
         height: 270px;
-        overflow: scroll;
+        overflow: hidden;
       }
     }
 
