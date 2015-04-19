@@ -11,6 +11,8 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
 
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="<?php echo u(); ?>assets/css/app.min.css">
 
     <script src="<?php echo u(); ?>assets/js/modernizr.min.js"></script>
