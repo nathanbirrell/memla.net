@@ -16,6 +16,7 @@
         "grunt-open":                   "*",
         "grunt-contrib-concat":         "*",
         "grunt-autoprefixer":           "*",
+        "tiny-lr":                      "~0.0.4",
         "grunt-contrib-imagemin":       "*"
     }
 }

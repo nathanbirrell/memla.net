@@ -34,7 +34,7 @@
   <?php } else if ($site->background_image() == "on") { ?>
     <body class="background-image">
   <?php } else {; ?>
-    <body class="">
+    <body class="page">
   <?php }; ?>
 
   
