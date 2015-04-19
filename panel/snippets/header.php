@@ -16,6 +16,8 @@
 <link rel="stylesheet" href="<?php echo c::get('panel.url') ?>/assets/css/screen.css" />
 <link rel="stylesheet" href="<?php echo c::get('panel.url') ?>/assets/css/screen.mobile.css" media="only screen and (max-width: 800px)" />
 
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'>
+
 <!--[if lt IE 9]>
 <link rel="stylesheet" href="<?php echo c::get('panel.url') ?>/assets/css/ie.css" />
 <![endif]-->
