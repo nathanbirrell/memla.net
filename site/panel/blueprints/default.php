@@ -2,7 +2,7 @@
 
 # default blueprint
 
-title: NEW PROJECT
+title: New Page
 pages: false
 files: true
 fields:

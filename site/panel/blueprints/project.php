@@ -1,7 +1,5 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# default blueprint
-
 title: NEW PROJECT
 pages: false
 files: true

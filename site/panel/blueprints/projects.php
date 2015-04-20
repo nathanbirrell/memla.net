@@ -1,6 +1,5 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# default blueprint
 
 title: Projects
 pages: true
@@ -13,6 +12,6 @@ fields:
     label: Page heading
     type:  text
   text:
-    label: descriptions
+    label: Description (to add a Project, click the '+' icon in the top-left and choose 'NEW PROJECT')
     type: textarea
     size: medium
