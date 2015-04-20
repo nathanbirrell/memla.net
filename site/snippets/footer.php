@@ -1,6 +1,7 @@
       <footer class="row">
         <div class="small-10 small-centered columns  text-center">
-          <?php echo kirbytext($site->copyright()) ?>
+          <?php echo kirbytext($site->copyright()) ?> 
+          <span class="credit"><i class="fa fa-code"></i> built by <a href="http://nathanbirrell.me/" target="_blank">Nathan Birrell</a></span>
         </div>
       </footer>
 
