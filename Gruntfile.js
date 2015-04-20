@@ -112,7 +112,7 @@ module.exports = function(grunt){
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('server', ['php']);
-    grunt.registerTask('build',['uglify']);
+    grunt.registerTask('build',['uglify','sass']);
     // grunt.registerTask('build',  ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 
 };
