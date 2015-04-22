@@ -6,8 +6,8 @@
 
 	<div class="row section project-info">
 		<div class="gallery-controllers">
-			<span class="prevslide fa fa-angle-left" style="cursor: pointer;"></span>
-			<span class="nextslide fa fa-angle-right" style="cursor: pointer;"></span>
+			<span class="fa fa-angle-left prevslide" style="cursor: pointer;"></span>
+			<span class="fa fa-angle-right nextslide" style="cursor: pointer;"></span>
 		</div>
 	    <div class="small-10 small-centered columns">
 			<article class="info">

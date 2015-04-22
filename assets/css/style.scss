@@ -226,12 +226,12 @@
     .gallery-controllers {
       position: absolute;
       width: 100%;
-      color: #FFF;
       font-size: 44px;
       top: 50%;
       margin-top: -22px;
 
       .prevslide, .nextslide {
+        color: #FFF;
         z-index: 99;
         position: absolute;
         // bottom: -20px;
