@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="<?php echo u(); ?>assets/css/app.min.css">
 
-    <script src="<?php echo u(); ?>assets/js/modernizr.min.js"></script>
+    <script src="<?php echo u(); ?>assets/js/dist/modernizr.min.js"></script>
 
   </head>
 

@@ -9,16 +9,16 @@ module.exports = function(grunt){
             livereload: {
               files: [
                       'assets/css/app.css',
-                      'assets/js/**/*',
+                      'assets/js/dist/app.min.js',
                       'content/**/*',
                       'site/**/*'
                       ],
               tasks: ['reload']
             },
-            // js: {
-            //     files: ['assets/js/*.js'],
-            //     tasks: ['uglify']
-            // },
+            js: {
+                files: ['assets/js/src/*.js'],
+                tasks: ['concat','uglify']
+            },
             css: {
                 files: ['assets/css/**/**/*'],
                 tasks: ['sass','cssmin']
@@ -44,13 +44,26 @@ module.exports = function(grunt){
             }
         },
 
+        concat: {
+          dist: {
+              src: ['assets/js/src/jquery.min.js', 
+                    'assets/js/src/foundation.min.js', 
+                    'assets/js/src/jquery.easing.js', 
+                    'assets/js/src/jquery.iosslider.min.js', 
+                    'assets/js/src/imagesloaded.pkgd.min.js', 
+                    'assets/js/src/jquery-imagefill.js', 
+                    'assets/js/src/app.js'],
+              dest: 'assets/js/dist/app.js'
+          }
+        },
+
         uglify: {
             options: {
               mangle: false //To prevent changes to your variable and function names
             },
             build: {
                 files: {
-                    'assets/js/jquery.min.js': ['assets/js/vendor/jquery.js']
+                    'assets/js/dist/app.min.js': ['assets/js/dist/app.js']
                 }
             }
         },
@@ -112,7 +125,7 @@ module.exports = function(grunt){
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('server', ['php']);
-    grunt.registerTask('build',['uglify','sass']);
+    grunt.registerTask('build',['concat','uglify','sass']);
     // grunt.registerTask('build',  ['sass', 'cssmin', 'concat', 'uglify', 'imagemin']);
 
 };
