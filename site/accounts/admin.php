@@ -9,3 +9,6 @@ role: admin
 token: b8bf18388273174f60dd2b56713b6e102775de9f
 firstname: Nathan
 lastname: Birrell
+history:
+  - projects
+  - projects/apartments-st-kilda

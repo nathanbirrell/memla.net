@@ -1,8 +1,8 @@
-﻿Title: Projects
+Title: Projects
 
 ----
 
-Page_title: Our work
+Page-title: Our Work
 
 ----
 
