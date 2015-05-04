@@ -10,5 +10,8 @@ token: b8bf18388273174f60dd2b56713b6e102775de9f
 firstname: Nathan
 lastname: Birrell
 history:
-  - projects
-  - projects/apartments-st-kilda
+  - projects/gary-smorgon-house
+  - projects/toorak
+  - projects/malvern-residence
+  - projects/j-t-packer-park
+  - projects/glen-iris
