@@ -2,17 +2,7 @@
 
 <?php 
 
-function trimDescription($string,$length=220,$append="&hellip;") {
-  $string = trim($string);
 
-  if(strlen($string) > $length) {
-    $string = wordwrap($string, $length);
-    $string = explode("\n", $string, 2);
-    $string = $string[0] . $append;
-  }
-
-  return $string;
-}
 
 ?>
 
@@ -40,7 +30,7 @@ function trimDescription($string,$length=220,$append="&hellip;") {
 
           <h2 class="project-title"><a href="<?php echo $project->url() ?>"><strong><?php echo $project->title() ?></strong></a></h2>
 
-          <p class="project-description"><?php echo trimDescription($project->text()) ?></p>
+          <p class="project-description"><?php echo $project->text()->excerpt(200) ?></p>
         </project>
 
       <?php endforeach ?>
