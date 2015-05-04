@@ -13,9 +13,9 @@
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="<?php echo u(); ?>assets/css/app.min.css">
+    <link rel="stylesheet" href="<?php echo u(); ?>/assets/css/app.min.css">
 
-    <script src="<?php echo u(); ?>assets/js/dist/modernizr.min.js"></script>
+    <script src="<?php echo u(); ?>/assets/js/dist/modernizr.min.js"></script>
 
   </head>
 
@@ -50,7 +50,7 @@
         <h1 class="hide text-center title"><?php echo html($site->title_short()) ?></h1>
         <h2 class="hide text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
 
-        <a href="<?php echo u(); ?>"><img class="text-center logo" src="<?php echo u(); ?>assets/img/logo.png" /></a>
+        <a href="<?php echo u(); ?>"><img class="text-center logo" src="<?php echo u(); ?>/assets/img/logo.png" /></a>
       </div>
 
     </div>

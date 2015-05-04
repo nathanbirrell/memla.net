@@ -10,6 +10,6 @@
       </div>
     <?php }; ?>
 
-    <script src="<?php echo u(); ?>assets/js/dist/app.min.js"></script>
+    <script src="<?php echo u(); ?>/assets/js/dist/app.min.js"></script>
   </body>
 </html>
