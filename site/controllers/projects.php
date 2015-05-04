@@ -25,3 +25,7 @@ return function($site, $pages, $page) {
 function displayTag($tag) {
   return ucfirst(str_replace('-', ' ', $tag));
 }
+
+function getTagThumbnail($tag, $page) {
+  return $page->children()->filterBy('tags', $tag, ',')->first()->images()->first()->url();
+}
