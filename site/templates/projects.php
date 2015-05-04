@@ -4,7 +4,7 @@
 
   <div class="row section">
 
-    <h1 class="small-10 small-centered columns"><?php echo $page->page_title(); if($tag) { echo html(": " . ucfirst($tag)); } ?></h1>
+    <h1 class="small-10 small-centered columns"><?php echo $page->page_title(); if($tag) { echo html(": " . displayTag($tag)); } ?></h1>
 
     <div class="small-10 small-centered columns">
 
@@ -15,7 +15,6 @@
     } ?>
 
     <!-- If there is a tag set, show every project for that tag -->
-
     <?php snippet('tag-projects') ?>
 
     </div>

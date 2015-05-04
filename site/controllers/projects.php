@@ -21,3 +21,7 @@ return function($site, $pages, $page) {
   return compact('projects', 'tags', 'tag', 'pagination');
 
 };
+
+function displayTag($tag) {
+  return ucfirst(str_replace('-', ' ', $tag));
+}
