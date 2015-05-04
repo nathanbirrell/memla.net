@@ -154,11 +154,9 @@
     }
     .tag-image {
       width: 100%;
-      height: 150px;
+      height: 200px;
 
-      .tag-text {
-        background-color: $primary-color; //fallback
-        background-color: rgba($primary-color, 0.75);
+      .tag-text, .tag-bg {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -166,12 +164,17 @@
         p {
           display: inherit;
           position: relative;
-          top: 48px;
+          top: 58px;
           color: #fff;
           text-align: center;
           text-transform: uppercase; 
           font-size: $h4-font-size;
         }
+      }
+      .tag-bg {
+        background-color: $primary-color; //fallback
+        background-color: rgba($primary-color, 0.75);
+        content: '';
       }
     }
 
