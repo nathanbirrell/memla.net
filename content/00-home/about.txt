@@ -1,0 +1,19 @@
+Title: About
+
+----
+
+col_1:
+
+Memla is a Melbourne based landscape architecture firm. Our practice is driven by a team of self-motivated people and led by Matt Mcfall.
+
+----
+
+col_2:
+
+We invest heavily from the outset in the latest technology to provide our clients with a cost effective and flexible means of communicating design concepts.
+
+----
+
+col_3:
+
+We work on all types of [projects](/projects) ranging from detailed residential, through to large commercial, campus and urban design projects.
