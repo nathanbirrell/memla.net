@@ -418,5 +418,9 @@ $(document).ready(function() {
 		// Swap for image
 		$('img.logo').attr('src','/assets/img/logo-white.png');
 	}
+});
 
+
+$('.tag-image').hover(function () {
+   $(this).find('.tag-bg').slideToggle(300); 
 });
