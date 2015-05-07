@@ -186,6 +186,8 @@
 // ===============
 
 .project {
+
+  // Positioning of information and controls module
   margin-top: -390px;
   .row.section.project-info {
     margin-bottom: 0;
@@ -197,10 +199,11 @@
       margin-bottom: 40px;
     }
   }
+
+  // Project information styles
   .project-info {
     width: 100%;
     position: relative;
-    max-height: 152px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -236,10 +239,10 @@
           font-size: 20px;
         }        
       }
-    }
 
-    span.break {
-      margin: auto 6px;
+      span.break {
+        margin: auto 6px;
+      }
     }
 
     @media #{$medium-up} {
