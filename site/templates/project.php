@@ -13,7 +13,9 @@
 			<article class="info">
 				<h1 class="project-title"><?php echo html($page->title()) ?></h1>
 				
-				<?php echo kirbytext($page->text()) ?>
+				<?php echo kirbytext('**Type:** ' . displayTag($page->tags()->first())) ?>
+				<span class="break"> | </span>
+				<?php echo kirbytext('**About:** ' . $page->text()->excerpt(150)) ?>
 			</article>
 	    </div>
 	</div>

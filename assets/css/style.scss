@@ -200,7 +200,7 @@
   .project-info {
     width: 100%;
     position: relative;
-    max-height: 290px;
+    max-height: 152px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -219,39 +219,40 @@
       text-align: center;
 
       @media #{$medium-up} {
-        font-size: $h1-font-size;
+        font-size: $h2-font-size;
         text-align: left;
       } 
     }
-    p {
+    p, span.break {
       display: none; // hide for mobiles
       font-weight: 200;
 
       @media #{$medium-up} {
         display: initial;
         margin: auto;
-        font-size: 20px;
+        font-size: 18px;
 
         @media #{$large-up} {
-          font-size: 26px;
+          font-size: 20px;
         }        
       }
+    }
+
+    span.break {
+      margin: auto 6px;
+    }
+
+    .info {
+      height: 100%;
+      overflow: hidden;
     }
 
     // Dimensions of the project info panel
     @media #{$medium-up} {
       height: 250px; 
-      .info {
-        height: 240px;
-        overflow: hidden;
-      }
     }
     @media #{$large-up} {
       height: 290px; 
-      .info {
-        height: 270px;
-        overflow: hidden;
-      }
     }
 
     //  Left and right controllers for gallery
