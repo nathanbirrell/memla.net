@@ -1,4 +1,4 @@
-<ul class="tags small-block-grid-1 medium-block-grid-1 large-block-grid-2">
+<ul class="tags small-block-grid-1 large-block-grid-2">
 	<?php foreach($tags as $tag): ?>
 		<li>
 			<a href="<?php echo $page->url() . '/tag:' . $tag ?>">

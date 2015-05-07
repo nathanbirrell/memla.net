@@ -374,8 +374,6 @@ jQuery.extend( jQuery.easing,
 
 $(document).foundation();
 
-$('.imageFill').imagefill();
-
 $(document).ready(function() {
 
 	$('.iosSlider').iosSlider({
@@ -424,3 +422,5 @@ $(document).ready(function() {
 $('.tag-image').hover(function () {
    $(this).find('.tag-bg').slideToggle(300); 
 });
+
+$('.imageFill').imagefill();
