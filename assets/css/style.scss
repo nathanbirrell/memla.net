@@ -242,17 +242,25 @@
       margin: auto 6px;
     }
 
-    .info {
-      height: 100%;
-      overflow: hidden;
-    }
-
-    // Dimensions of the project info panel
     @media #{$medium-up} {
-      height: 250px; 
-    }
-    @media #{$large-up} {
-      height: 290px; 
+      .info {
+        height: 100%;
+        margin-bottom: 12px;
+
+        p {
+           // Only show 2 lines of text
+          position: relative;
+          overflow: hidden;
+          overflow-y: hidden;
+          text-overflow: ellipsis;
+          display: block;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2; /* number of lines to show */
+          line-height: 25px;        /* fallback */
+          max-height: 25px*2;       /* fallback */
+        }
+      }
     }
 
     //  Left and right controllers for gallery

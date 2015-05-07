@@ -12,10 +12,11 @@
 	    <div class="small-10 small-centered columns">
 			<article class="info">
 				<h1 class="project-title"><?php echo html($page->title()) ?></h1>
-				
-				<?php echo kirbytext('**Type:** ' . displayTag($page->tags()->first())) ?>
-				<span class="break"> | </span>
-				<?php echo kirbytext('**About:** ' . $page->text()->excerpt(150)) ?>
+				<p>
+					<?php echo '<b>Type:</b> ' . displayTag($page->tags()->first()) ?>
+					<span class="break"> | </span>
+					<?php echo '<b>About:</b> ' . $page->text() ?>
+				</p>
 			</article>
 	    </div>
 	</div>
