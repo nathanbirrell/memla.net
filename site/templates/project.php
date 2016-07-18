@@ -2,25 +2,39 @@
 
 <div class="clearfix spacer"></div>
 
-<section class="content project">
+<!-- Wrapper -->
+	<section id="wrapper">
+		<header>
+			<div class="inner">
+				<h2><?php echo html($page->title()) ?></h2>
+				<p><?php echo '<b>Type:</b> ' . displayTag($page->tags()->first()) ?></p>
+			</div>
+		</header>
 
-	<div class="row section project-info">
-		<div class="gallery-controllers">
-			<span class="fa fa-angle-left prevslide" style="cursor: pointer;"></span>
-			<span class="fa fa-angle-right nextslide" style="cursor: pointer;"></span>
-		</div>
-	    <div class="small-10 small-centered columns">
-			<article class="info">
-				<h1 class="project-title"><?php echo html($page->title()) ?></h1>
-				<p>
-					<?php echo '<b>Type:</b> ' . displayTag($page->tags()->first()) ?>
-					<span class="break"> | </span>
-					<?php echo '<b>About:</b> ' . $page->text() ?>
-				</p>
-			</article>
-	    </div>
-	</div>
+		<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
 
-</section>
+					<?php echo $page->text() ?>
+
+					<section class="features">
+						<article>
+							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+							<h3 class="major">Sed feugiat lorem</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+							<h3 class="major">Nisl placerat</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+					</section>
+
+				</div>
+			</div>
+
+	</section>
 
 <?php snippet('footer') ?>

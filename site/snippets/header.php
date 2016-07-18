@@ -11,48 +11,36 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="<?php echo u(); ?>/assets/css/app.min.css">
-
-    <script src="<?php echo u(); ?>/assets/js/dist/modernizr.min.js"></script>
-
+		<!--[if lte IE 8]><script src="<?php echo u(); ?>/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="<?php echo u(); ?>/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="<?php echo u(); ?>/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="<?php echo u(); ?>/assets/css/ie8.css" /><![endif]-->
   </head>
 
-<!-- 
-  There are two pages that have background images:
-    1. each project page has a gallery slider
-    2. each page has one if the background image switch is on
- -->
- 
-  <?php if ($page->template() == "project") { ?>
-    <body class="background-image">
-      <?php snippet('project-slider') ?>
+  <body>
 
-      <!-- start project page body div -->
-      <div class="project-page-body">
-  <?php } else if ($site->background_image() == "on") { ?>
-    <body class="background-image">
-  <?php } else {; ?>
-    <body class="page">
-  <?php }; ?>
+  		<!-- Page Wrapper -->
+  			<div id="page-wrapper">
 
-  
-  <!-- body content here -->
+  				<!-- Header -->
+  					<header id="header" class="alt">
+  						<h1><a href="index.html">Solid State</a></h1>
+  						<nav>
+  							<a href="#menu">Menu</a>
+  						</nav>
+  					</header>
 
-  <div class="row site-headings text-center">
-    
-    <div class="small-8 small-centered columns heading-panel">
-      
-      <?php snippet('menu') ?>
-
-      <div class="small-centered columns">
-        <h1 class="hide text-center title"><?php echo html($site->title_short()) ?></h1>
-        <h2 class="hide text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
-
-        <a href="<?php echo u(); ?>"><img class="text-center logo" src="<?php echo u(); ?>/assets/img/logo.png" /></a>
-      </div>
-
-    </div>
-
-  </div>
+  				<!-- Menu -->
+  					<nav id="menu">
+  						<div class="inner">
+  							<h2>Menu</h2>
+  							<ul class="links">
+  								<li><a href="index.html">Home</a></li>
+  								<li><a href="generic.html">Generic</a></li>
+  								<li><a href="elements.html">Elements</a></li>
+  								<li><a href="#">Log In</a></li>
+  								<li><a href="#">Sign Up</a></li>
+  							</ul>
+  							<a href="#" class="close">Close</a>
+  						</div>
+  					</nav>
