@@ -1,5 +1,13 @@
-name: Test Person
+﻿Title: sam
+
 ----
-phone: 0400 123 123
+
+Name: Sam Williams
+
 ----
-email: test@memla.net
+
+Phone: 03 8060 6813
+
+----
+
+Email: sam@memla.net

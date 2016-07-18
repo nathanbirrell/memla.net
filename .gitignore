@@ -1,0 +1,15 @@
+.DS_Store
+docs
+node_modules/*
+npm-debug.log
+
+*.scssc
+assets/css/app.css
+assets/css/app.min.css
+assets/css/app.css.map
+thumbs
+content
+
+site/accounts
+bower_components
+config.codekit

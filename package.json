@@ -5,7 +5,7 @@
     "private" : true,
 
     "devDependencies" : {
-        "grunt" :                       "~0.4.1",
+        "grunt" :                       "~0.4.5",
         "matchdep":                     "*",
         "grunt-contrib-cssmin":         "*",
         "grunt-contrib-sass":           "*",
@@ -16,6 +16,7 @@
         "grunt-open":                   "*",
         "grunt-contrib-concat":         "*",
         "grunt-autoprefixer":           "*",
+        "tiny-lr":                      "~0.0.4",
         "grunt-contrib-imagemin":       "*"
     }
 }

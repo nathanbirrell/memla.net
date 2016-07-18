@@ -11,9 +11,11 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="stylesheet" href="<?php echo u(); ?>assets/css/app.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'>
 
-    <script src="<?php echo u(); ?>assets/js/modernizr.min.js"></script>
+    <link rel="stylesheet" href="<?php echo u(); ?>/assets/css/app.min.css">
+
+    <script src="<?php echo u(); ?>/assets/js/dist/modernizr.min.js"></script>
 
   </head>
 
@@ -32,7 +34,7 @@
   <?php } else if ($site->background_image() == "on") { ?>
     <body class="background-image">
   <?php } else {; ?>
-    <body class="">
+    <body class="page">
   <?php }; ?>
 
   
@@ -48,7 +50,7 @@
         <h1 class="hide text-center title"><?php echo html($site->title_short()) ?></h1>
         <h2 class="hide text-center subtitle"><?php echo html($site->subtitle()) ?></h2>
 
-        <a href="<?php echo u(); ?>"><img class="text-center logo" src="<?php echo u(); ?>assets/img/logo.png" /></a>
+        <a href="<?php echo u(); ?>"><img class="text-center logo" src="<?php echo u(); ?>/assets/img/logo.png" /></a>
       </div>
 
     </div>

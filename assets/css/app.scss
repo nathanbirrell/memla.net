@@ -10,13 +10,11 @@
 @import "normalize.min.css";
 
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
 @import "font-awesome.min.css";
 
 // Behold, here are all the Foundation components.
 @import "foundation/settings";
-@import "foundation/functions";
 @import "foundation";
 
 // And my personal styles...
-@import "style";
+@import "style"; 
