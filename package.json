@@ -1,0 +1,23 @@
+{
+  "name": "memla.net",
+  "version": "2.0.0",
+  "description": "Memla Landscape Architects' portfolio website.",
+  "main": "index.php",
+  "scripts": {
+    "test": "npm -v",
+    "dev-css": "node-sass assets/sass/ -o assets/css/ -wr",
+    "dev": "npm run dev-css",
+    "build-css": "node-sass assets/sass/ -o assets/css/",
+    "build": "npm run build-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanbirrell/memla.net.git"
+  },
+  "author": "Nathan Birrell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanbirrell/memla.net/issues"
+  },
+  "homepage": "https://github.com/nathanbirrell/memla.net#readme"
+}
